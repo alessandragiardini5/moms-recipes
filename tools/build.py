@@ -278,8 +278,9 @@ async function toggleFav(id){
   try{
     const r=on?await fetch(F.url,{method:"POST",headers:{...H,"Content-Type":"application/json","Prefer":"resolution=ignore-duplicates,return=minimal"},body:JSON.stringify([{recipe_id:id}])})
               :await fetch(F.url+"?recipe_id=eq."+encodeURIComponent(id),{method:"DELETE",headers:{...H,"Prefer":"return=minimal"}});
-    if(!r.ok)throw 0;
-  }catch(e){on?favs.delete(id):favs.add(id);store.set("favs",[...favs]);paintFavs();toast("Couldn't save the favorite. Check the internet connection and try again.")}
+    if(!r.ok){let c="";try{c=(await r.json()).code||""}catch(_){}throw new Error("error "+r.status+(c?" / "+c:""))}
+  }catch(e){on?favs.delete(id):favs.add(id);store.set("favs",[...favs]);paintFavs();
+    toast("Couldn't save the favorite ("+(e&&e.message?e.message:"no connection")+"). Try again in a moment.")}
 }
 document.addEventListener("click",e=>{const b=e.target.closest(".fav[data-id]");if(!b)return;e.preventDefault();e.stopPropagation();toggleFav(b.dataset.id)});
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")loadFavs()});
