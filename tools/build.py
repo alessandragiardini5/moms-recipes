@@ -148,7 +148,7 @@ def recipe_page(r):
   <div>
     <div class="kicker">{E(r['cat'])}</div>
     <h1>{E(r['title'])}</h1>
-    <div class="from">From the kitchen of Mom · {E(r['date'])}</div>
+    <div class="from">From the kitchen of Mom</div>
     <div class="facts">{facts}</div>
   </div>
   <div><img class="cardimg" src="../cards/{r['card']}" alt="Mom's original recipe card for {E(r['title'])}">
@@ -178,7 +178,7 @@ def index_page():
         tiles.append(f'<a class="tile" href="recipes/{r["id"]}.html" data-cat="{E(r["cat"])}" data-words="{E(words)}">'
                      f'<div class="ph" style="background-image:url(\'cards/{r["card"]}\')"></div>'
                      f'<div class="bd"><div class="cat">{E(r["cat"])}</div><h3>{E(r["title"])}</h3>'
-                     f'<div class="meta">{E(r["date"])}</div>{flag}</div></a>')
+                     f'<div class="meta">From the kitchen of Mom</div>{flag}</div></a>')
     body=f"""<section class="hero">
   <h1>From the kitchen of Mom</h1>
   <p>Recipes copied from her cow-print cards. {len(RECIPES)} recipes so far.</p>
