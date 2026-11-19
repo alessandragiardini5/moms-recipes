@@ -21,22 +21,21 @@
   "name": "Mom"
  },
  "image": [
-  "../cards/spinach-salad.jpg",
-  "../cards/spinach-salad-back.jpg"
+  "../cards/spinach-salad.jpg"
  ],
  "recipeCategory": "Salads",
  "recipeIngredient": [
-  "1–2 bunches spinach washed and dried",
-  "½ cup slivered almonds toasted",
-  "3 strips bacon crisp, crumbled",
-  "1 red apple chopped, peel on",
+  "1–2 bunches spinach (washed and dried)",
+  "½ cup slivered almonds (toasted)",
+  "3 strips bacon (crisp, crumbled)",
+  "1 red apple (chopped, peel on)",
   "lemon juice",
   "⅓ cup oil",
   "¼ cup tarragon vinegar",
   "½ cup sugar",
   "½ tsp dry mustard",
   "½ tsp salt",
-  "pepper to taste (about ⅛ tsp)"
+  "pepper (to taste, about ⅛ tsp)"
  ],
  "recipeInstructions": [
   {
@@ -66,28 +65,41 @@
 <section class="rhead">
   <div>
     <div class="kicker">Salads</div>
-    <h1>Spinach Salad</h1>
+    <div class="titlerow"><h1>Spinach Salad</h1><button class="fav big" data-id="spinach-salad" aria-pressed="false" aria-label="Add to favorites"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.4-4.5-9.5-9C1 8 2.7 4.6 6.1 4.2c2.2-.3 4.2.9 5.9 2.9 1.7-2 3.7-3.2 5.9-2.9 3.4.4 5.1 3.8 3.6 7.1-2.1 4.5-9.5 9-9.5 9z"/></svg></button></div>
     <div class="from">From the kitchen of Mom</div>
     <div class="facts"><div class="fact"><b>Oven</b>None</div><div class="fact"><b>Dressing</b>Shake in a jar</div></div>
+    <div class="controls">
+      <div class="seg" id="scale" role="group" aria-label="Recipe amount">
+        <button data-m="0.5">½×</button><button data-m="1" aria-pressed="true">1×</button><button data-m="2">2×</button><button data-m="3">3×</button>
+      </div>
+      <div class="seg" id="units" role="group" aria-label="Units">
+        <button data-units="us" aria-pressed="true">US</button><button data-units="metric">Metric</button>
+      </div>
+      <button class="cookbtn" id="cookBtn">Cook mode</button>
+    </div>
   </div>
   <div><img class="cardimg" src="../cards/spinach-salad.jpg" alt="Original recipe card for Spinach Salad">
     <img class="cardimg cardback" src="../cards/spinach-salad-back.jpg" alt="Back of the card"><div class="cardcap">Mom's original card (front and back) · tap to enlarge</div></div>
 </section>
 <section class="body">
-  <div>
+  <div id="ingcol">
     <h2>Ingredients <small><button class="pill" id="clr">Reset</button></small></h2>
-    <h3 class="sub">Salad</h3><ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q">1–2 bunches</span> spinach <span class="n">washed and dried</span></span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q">½ cup</span> slivered almonds <span class="n">toasted</span></span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q">3 strips</span> bacon <span class="n">crisp, crumbled</span></span></label></li><li><label><input type="checkbox" data-k="3"><span><span class="q">1</span> red apple <span class="n">chopped, peel on</span></span></label></li><li><label><input type="checkbox" data-k="4"><span>lemon juice</span></label></li></ul><h3 class="sub">Dressing</h3><ul class="ing"><li><label><input type="checkbox" data-k="5"><span><span class="q">⅓ cup</span> oil</span></label></li><li><label><input type="checkbox" data-k="6"><span><span class="q">¼ cup</span> tarragon vinegar</span></label></li><li><label><input type="checkbox" data-k="7"><span><span class="q">½ cup</span> sugar</span></label></li><li><label><input type="checkbox" data-k="8"><span><span class="q">½ tsp</span> dry mustard</span></label></li><li><label><input type="checkbox" data-k="9"><span><span class="q">½ tsp</span> salt</span></label></li><li><label><input type="checkbox" data-k="10"><span>pepper <span class="n">to taste (about ⅛ tsp)</span></span></label></li></ul>
+    <h3 class="sub">Salad</h3><ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q" data-q="1" data-q2="2" data-u="bunch">1–2 bunches</span> spinach <span class="n">(washed and dried)</span></span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q" data-q="0.5" data-u="cup" data-gpc="110">½ cup</span> slivered almonds <span class="n">(toasted)</span></span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q" data-q="3" data-u="strip">3 strips</span> bacon <span class="n">(crisp, crumbled)</span></span></label></li><li><label><input type="checkbox" data-k="3"><span><span class="q" data-q="1">1</span> red apple <span class="n">(chopped, peel on)</span></span></label></li><li><label><input type="checkbox" data-k="4"><span>lemon juice</span></label></li></ul><h3 class="sub">Dressing</h3><ul class="ing"><li><label><input type="checkbox" data-k="5"><span><span class="q" data-q="0.3333333333333333" data-u="cup">⅓ cup</span> oil</span></label></li><li><label><input type="checkbox" data-k="6"><span><span class="q" data-q="0.25" data-u="cup">¼ cup</span> tarragon vinegar</span></label></li><li><label><input type="checkbox" data-k="7"><span><span class="q" data-q="0.5" data-u="cup" data-gpc="200">½ cup</span> sugar</span></label></li><li><label><input type="checkbox" data-k="8"><span><span class="q" data-q="0.5" data-u="tsp">½ tsp</span> dry mustard</span></label></li><li><label><input type="checkbox" data-k="9"><span><span class="q" data-q="0.5" data-u="tsp">½ tsp</span> salt</span></label></li><li><label><input type="checkbox" data-k="10"><span>pepper <span class="n">(to taste, about ⅛ tsp)</span></span></label></li></ul>
   </div>
   <div>
     <h2>Method <small>tap a step to mark it done</small></h2>
-    <ol class="steps"><li data-i="0">Combine the spinach, toasted almonds, crumbled bacon, chopped apple and lemon juice.</li><li data-i="1">Dressing: mix together the oil, tarragon vinegar, sugar, dry mustard, salt and pepper.</li><li data-i="2">Shake well, pour over the salad and toss.</li></ol>
+    <ol class="steps"><li data-i="0"><span class="stxt">Combine the spinach, toasted almonds, crumbled bacon, chopped apple and lemon juice.</span></li><li data-i="1"><span class="stxt">Dressing: mix together the oil, tarragon vinegar, sugar, dry mustard, salt and pepper.</span></li><li data-i="2"><span class="stxt">Shake well, pour over the salad and toss.</span></li></ol>
     
   </div>
 </section>
 </article>
+<div id="cook" hidden></div>
+<script id="cookdata" type="application/json">{"title": "Spinach Salad", "steps": [{"h": "Combine the spinach, toasted almonds, crumbled bacon, chopped apple and lemon juice.", "t": null}, {"h": "Dressing: mix together the oil, tarragon vinegar, sugar, dry mustard, salt and pepper.", "t": null}, {"h": "Shake well, pour over the salad and toss.", "t": null}]}</script>
 </main>
 <div id="timers"></div>
 <div id="lb"><img alt=""></div>
+<div id="toast" role="status"></div>
+<script>window.FAV={url:"https://ppkuiafkfvsyzdcnurhs.supabase.co/rest/v1/favorites",key:"sb_publishable_Kuo6iWrCxMpjY94yLM19uQ_rAkgJCcH"};</script>
 <script src="../app.js"></script>
 </body>
 </html>

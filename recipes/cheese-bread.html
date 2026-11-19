@@ -73,28 +73,41 @@
 <section class="rhead">
   <div>
     <div class="kicker">Breads &amp; Sides</div>
-    <h1>Cheese Bread</h1>
+    <div class="titlerow"><h1>Cheese Bread</h1><button class="fav big" data-id="cheese-bread" aria-pressed="false" aria-label="Add to favorites"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.4-4.5-9.5-9C1 8 2.7 4.6 6.1 4.2c2.2-.3 4.2.9 5.9 2.9 1.7-2 3.7-3.2 5.9-2.9 3.4.4 5.1 3.8 3.6 7.1-2.1 4.5-9.5 9-9.5 9z"/></svg></button></div>
     <div class="from">From the kitchen of Mom</div>
-    <div class="facts"><div class="fact"><b>Oven</b>400°F</div><div class="fact"><b>Bake</b>10 min</div></div>
+    <div class="facts"><div class="fact"><b>Oven</b><span class="temp" data-f="400">400°F</span></div><div class="fact"><b>Bake</b>10 min</div></div>
+    <div class="controls">
+      <div class="seg" id="scale" role="group" aria-label="Recipe amount">
+        <button data-m="0.5">½×</button><button data-m="1" aria-pressed="true">1×</button><button data-m="2">2×</button><button data-m="3">3×</button>
+      </div>
+      <div class="seg" id="units" role="group" aria-label="Units">
+        <button data-units="us" aria-pressed="true">US</button><button data-units="metric">Metric</button>
+      </div>
+      <button class="cookbtn" id="cookBtn">Cook mode</button>
+    </div>
   </div>
   <div><img class="cardimg" src="../cards/cheese-bread.jpg" alt="Original recipe card for Cheese Bread">
     <div class="cardcap">Mom's original card · tap to enlarge</div></div>
 </section>
 <section class="body">
-  <div>
+  <div id="ingcol">
     <h2>Ingredients <small><button class="pill" id="clr">Reset</button></small></h2>
-    <ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q">1 loaf</span> day-old sliced bread</span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q">3</span> eggs</span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q">3 tsp</span> milk</span></label></li><li><label><input type="checkbox" data-k="3"><span>melted butter</span></label></li><li><label><input type="checkbox" data-k="4"><span>Parmesan cheese</span></label></li></ul>
+    <ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q" data-q="1" data-u="loaf">1 loaf</span> day-old sliced bread</span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q" data-q="3">3</span> eggs</span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q" data-q="3" data-u="tsp">3 tsp</span> milk</span></label></li><li><label><input type="checkbox" data-k="3"><span>melted butter</span></label></li><li><label><input type="checkbox" data-k="4"><span>Parmesan cheese</span></label></li></ul>
   </div>
   <div>
     <h2>Method <small>tap a step to mark it done</small></h2>
-    <ol class="steps"><li data-i="0">Remove the crusts from the bread.</li><li data-i="1">Beat the eggs and milk into a batter.</li><li data-i="2">Work in stacks of 3 slices: leave the 1st slice plain, dip the 2nd slice in the egg-and-milk batter, leave the 3rd slice plain.</li><li data-i="3">Stack all three together, with the battered slice in the middle.</li><li data-i="4">Coat the bread in melted butter and Parmesan cheese.</li><li data-i="5">Bake at 400°F for 10 minutes. <button class="tbtn" data-t="10" data-l="Cheese Bread">⏱ 10 min</button></li></ol>
+    <ol class="steps"><li data-i="0"><span class="stxt">Remove the crusts from the bread.</span></li><li data-i="1"><span class="stxt">Beat the eggs and milk into a batter.</span></li><li data-i="2"><span class="stxt">Work in stacks of 3 slices: leave the 1st slice plain, dip the 2nd slice in the egg-and-milk batter, leave the 3rd slice plain.</span></li><li data-i="3"><span class="stxt">Stack all three together, with the battered slice in the middle.</span></li><li data-i="4"><span class="stxt">Coat the bread in melted butter and Parmesan cheese.</span></li><li data-i="5"><span class="stxt">Bake at <span class="temp" data-f="400">400°F</span> for 10 minutes.</span> <button class="tbtn" data-t="10" data-l="Cheese Bread">⏱ 10 min</button></li></ol>
     
   </div>
 </section>
 </article>
+<div id="cook" hidden></div>
+<script id="cookdata" type="application/json">{"title": "Cheese Bread", "steps": [{"h": "Remove the crusts from the bread.", "t": null}, {"h": "Beat the eggs and milk into a batter.", "t": null}, {"h": "Work in stacks of 3 slices: leave the 1st slice plain, dip the 2nd slice in the egg-and-milk batter, leave the 3rd slice plain.", "t": null}, {"h": "Stack all three together, with the battered slice in the middle.", "t": null}, {"h": "Coat the bread in melted butter and Parmesan cheese.", "t": null}, {"h": "Bake at <span class=\"temp\" data-f=\"400\">400°F</span> for 10 minutes.", "t": 10}]}</script>
 </main>
 <div id="timers"></div>
 <div id="lb"><img alt=""></div>
+<div id="toast" role="status"></div>
+<script>window.FAV={url:"https://ppkuiafkfvsyzdcnurhs.supabase.co/rest/v1/favorites",key:"sb_publishable_Kuo6iWrCxMpjY94yLM19uQ_rAkgJCcH"};</script>
 <script src="../app.js"></script>
 </body>
 </html>

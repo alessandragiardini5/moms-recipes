@@ -25,8 +25,8 @@
  ],
  "recipeCategory": "Desserts",
  "recipeIngredient": [
-  "graham cracker crumbs — use the crust recipe on the box",
-  "3 × 8 oz packages cream cheese",
+  "graham cracker crumbs (use the crust recipe on the box)",
+  "3 packages cream cheese (8 oz each)",
   "1 cup sugar",
   "4 eggs",
   "½ cup sugar",
@@ -75,28 +75,41 @@
 <section class="rhead">
   <div>
     <div class="kicker">Desserts</div>
-    <h1>Cheesecake</h1>
+    <div class="titlerow"><h1>Cheesecake</h1><button class="fav big" data-id="cheesecake" aria-pressed="false" aria-label="Add to favorites"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.4-4.5-9.5-9C1 8 2.7 4.6 6.1 4.2c2.2-.3 4.2.9 5.9 2.9 1.7-2 3.7-3.2 5.9-2.9 3.4.4 5.1 3.8 3.6 7.1-2.1 4.5-9.5 9-9.5 9z"/></svg></button></div>
     <div class="from">From the kitchen of Mom</div>
-    <div class="facts"><div class="fact"><b>Oven</b>350°F, then 450°F</div><div class="fact"><b>Bake</b>20–25 + 5 min</div><div class="fact"><b>Makes</b>2 cheesecakes</div></div>
+    <div class="facts"><div class="fact"><b>Oven</b><span class="temp" data-f="350">350°F</span>, then <span class="temp" data-f="450">450°F</span></div><div class="fact"><b>Bake</b>20–25 + 5 min</div><div class="fact"><b>Makes</b><span class="fq" data-q="2" data-w="cheesecakes">2 cheesecakes</span></div></div>
+    <div class="controls">
+      <div class="seg" id="scale" role="group" aria-label="Recipe amount">
+        <button data-m="0.5">½×</button><button data-m="1" aria-pressed="true">1×</button><button data-m="2">2×</button><button data-m="3">3×</button>
+      </div>
+      <div class="seg" id="units" role="group" aria-label="Units">
+        <button data-units="us" aria-pressed="true">US</button><button data-units="metric">Metric</button>
+      </div>
+      <button class="cookbtn" id="cookBtn">Cook mode</button>
+    </div>
   </div>
   <div><img class="cardimg" src="../cards/cheesecake.jpg" alt="Original recipe card for Cheesecake">
     <div class="cardcap">Mom's original card · tap to enlarge</div></div>
 </section>
 <section class="body">
-  <div>
+  <div id="ingcol">
     <h2>Ingredients <small><button class="pill" id="clr">Reset</button></small></h2>
-    <h3 class="sub">Crust</h3><ul class="ing"><li><label><input type="checkbox" data-k="0"><span>graham cracker crumbs <span class="n">— use the crust recipe on the box</span></span></label></li></ul><h3 class="sub">Filling</h3><ul class="ing"><li><label><input type="checkbox" data-k="1"><span><span class="q">3 × 8 oz</span> packages cream cheese</span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q">1 cup</span> sugar</span></label></li><li><label><input type="checkbox" data-k="3"><span><span class="q">4</span> eggs</span></label></li></ul><h3 class="sub">Topping</h3><ul class="ing"><li><label><input type="checkbox" data-k="4"><span><span class="q">½ cup</span> sugar</span></label></li><li><label><input type="checkbox" data-k="5"><span><span class="q">1 tsp</span> vanilla</span></label></li><li><label><input type="checkbox" data-k="6"><span><span class="q">2 cups</span> sour cream <span class="n">(16 oz)</span></span></label></li></ul>
+    <h3 class="sub">Crust</h3><ul class="ing"><li><label><input type="checkbox" data-k="0"><span>graham cracker crumbs <span class="n">(use the crust recipe on the box)</span></span></label></li></ul><h3 class="sub">Filling</h3><ul class="ing"><li><label><input type="checkbox" data-k="1"><span><span class="q" data-q="3" data-u="package" data-ge="227">3 packages</span> cream cheese <span class="n nus">(8 oz each)</span></span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q" data-q="1" data-u="cup" data-gpc="200">1 cup</span> sugar</span></label></li><li><label><input type="checkbox" data-k="3"><span><span class="q" data-q="4">4</span> eggs</span></label></li></ul><h3 class="sub">Topping</h3><ul class="ing"><li><label><input type="checkbox" data-k="4"><span><span class="q" data-q="0.5" data-u="cup" data-gpc="200">½ cup</span> sugar</span></label></li><li><label><input type="checkbox" data-k="5"><span><span class="q" data-q="1" data-u="tsp">1 tsp</span> vanilla</span></label></li><li><label><input type="checkbox" data-k="6"><span><span class="q" data-q="2" data-u="cup" data-gpc="240">2 cups</span> sour cream <span class="n nus">(16 oz)</span></span></label></li></ul>
   </div>
   <div>
     <h2>Method <small>tap a step to mark it done</small></h2>
-    <ol class="steps"><li data-i="0">Make the graham cracker crust following the recipe on the crumb box.</li><li data-i="1">Beat the cream cheese, sugar and eggs together.</li><li data-i="2">Pour into the crust and bake at 350°F for 20–25 minutes (start checking at 20). <button class="tbtn" data-t="25" data-l="Cheesecake">⏱ 25 min</button></li><li data-i="3">Cool 20 minutes before adding the topping. <button class="tbtn" data-t="20" data-l="Cheesecake">⏱ 20 min</button></li><li data-i="4">Mix the sugar, vanilla and sour cream; spread over the top.</li><li data-i="5">Bake at 450°F for 5 minutes. <button class="tbtn" data-t="5" data-l="Cheesecake">⏱ 5 min</button></li></ol>
+    <ol class="steps"><li data-i="0"><span class="stxt">Make the graham cracker crust following the recipe on the crumb box.</span></li><li data-i="1"><span class="stxt">Beat the cream cheese, sugar and eggs together.</span></li><li data-i="2"><span class="stxt">Pour into the crust and bake at <span class="temp" data-f="350">350°F</span> for 20–25 minutes (start checking at 20).</span> <button class="tbtn" data-t="25" data-l="Cheesecake">⏱ 25 min</button></li><li data-i="3"><span class="stxt">Cool 20 minutes before adding the topping.</span> <button class="tbtn" data-t="20" data-l="Cheesecake">⏱ 20 min</button></li><li data-i="4"><span class="stxt">Mix the sugar, vanilla and sour cream; spread over the top.</span></li><li data-i="5"><span class="stxt">Bake at <span class="temp" data-f="450">450°F</span> for 5 minutes.</span> <button class="tbtn" data-t="5" data-l="Cheesecake">⏱ 5 min</button></li></ol>
     
   </div>
 </section>
 </article>
+<div id="cook" hidden></div>
+<script id="cookdata" type="application/json">{"title": "Cheesecake", "steps": [{"h": "Make the graham cracker crust following the recipe on the crumb box.", "t": null}, {"h": "Beat the cream cheese, sugar and eggs together.", "t": null}, {"h": "Pour into the crust and bake at <span class=\"temp\" data-f=\"350\">350°F</span> for 20–25 minutes (start checking at 20).", "t": 25}, {"h": "Cool 20 minutes before adding the topping.", "t": 20}, {"h": "Mix the sugar, vanilla and sour cream; spread over the top.", "t": null}, {"h": "Bake at <span class=\"temp\" data-f=\"450\">450°F</span> for 5 minutes.", "t": 5}]}</script>
 </main>
 <div id="timers"></div>
 <div id="lb"><img alt=""></div>
+<div id="toast" role="status"></div>
+<script>window.FAV={url:"https://ppkuiafkfvsyzdcnurhs.supabase.co/rest/v1/favorites",key:"sb_publishable_Kuo6iWrCxMpjY94yLM19uQ_rAkgJCcH"};</script>
 <script src="../app.js"></script>
 </body>
 </html>
