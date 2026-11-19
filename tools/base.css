@@ -15,10 +15,10 @@ button{font:inherit;cursor:pointer}
 /* header */
 header{border-bottom:1px solid var(--line);background:var(--card)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .brand svg{flex:none}
 .brand b{font-family:var(--serif);font-weight:700;font-size:1.45rem;letter-spacing:-.01em}
-.brand span{font-family:var(--hand);font-size:1.35rem;color:var(--red);margin-left:2px}
+.brand span{font-family:var(--hand);font-weight:700;font-size:2.1rem;line-height:1;color:var(--red);transform:translateY(2px)}
 .tools{display:flex;gap:8px}
 .pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;font-size:.85rem;color:var(--muted)}
 .pill[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}

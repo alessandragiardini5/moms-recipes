@@ -98,7 +98,7 @@ def page(title, body, root, extra_head=""):
 {extra_head}</head>
 <body>
 <header><div class="wrap">
-  <a class="brand" href="{root}index.html">{LOGO}<b>Mom's Recipe Box</b></a>
+  <a class="brand" href="{root}index.html"><span>Mom's</span><b>Recipe Box</b></a>
   <div class="tools"><button class="pill" id="bigBtn" aria-pressed="false">Large text</button></div>
 </div></header>
 <main class="wrap">
