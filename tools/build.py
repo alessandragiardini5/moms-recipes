@@ -405,7 +405,7 @@ Live at https://alessandragiardini5.github.io/moms-recipes/ — a plain static s
 - recipes/<name>.html   — one page per recipe with schema.org Recipe markup (generated)
 - cards/                — photos of Mom's original cards; cards/on-hold/ for unfinished ones
 - style.css, app.js     — look and behavior: checklists, timers, scaling, metric, cook mode, favorites (generated)
-- Favorites are shared through a free Supabase table (the free plan pauses after about a week without activity).
+- Favorites are shared through a free Supabase table; .github/workflows/keepalive.yml reads it daily so the free plan doesn't pause it.
 """
 
 VER = {}

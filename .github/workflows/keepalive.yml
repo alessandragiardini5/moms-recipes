@@ -1,0 +1,14 @@
+# Reads the favorites table once a day so the free Supabase project isn't paused for inactivity.
+name: Keep favorites database awake
+on:
+  schedule:
+    - cron: "23 13 * * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read favorites
+        run: |
+          curl -fsS "https://ppkuiafkfvsyzdcnurhs.supabase.co/rest/v1/favorites?select=recipe_id&limit=1" \
+            -H "apikey: sb_publishable_Kuo6iWrCxMpjY94yLM19uQ_rAkgJCcH"
