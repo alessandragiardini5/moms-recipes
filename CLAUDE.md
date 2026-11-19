@@ -11,6 +11,7 @@ Live site: https://alessandragiardini5.github.io/moms-recipes/ (GitHub Pages, br
 
 ## Conventions
 - Always "Mom", never "Mum". American English spelling.
+- Not every card is Mom's: cards signed "A. Dotson" (Angela Dotson) get `"from":"Angela"` → "From the kitchen of Angela". Default is Mom.
 - No dates shown on thumbnails or recipe pages — just "From the kitchen of Mom".
 - If Mom gives no amount (e.g. butter, Parmesan), leave it without a quantity.
 - Steps not on the card get `"added": True` (shows "not on card") unless Ali approves them.

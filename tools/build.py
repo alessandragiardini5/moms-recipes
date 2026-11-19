@@ -76,7 +76,7 @@ RECIPES = [
  "notes":[]
 },
 {
- "id":"chocolate-chip-cookies","title":"Chocolate Chip Cookies","cat":"Desserts","date":"March 26, 2001",
+ "id":"chocolate-chip-cookies","title":"Chocolate Chip Cookies","cat":"Desserts","from":"Angela","date":"March 26, 2001",
  "card":"chocolate-chip-cookies.jpg","facts":[["Oven","375°F"],["Bake","9–11 min"],["Source","Nestlé Toll House package, taped to Mom's card"]],"cook":11,
  "groups":[{"items":[["2¼ cups","all-purpose flour"],["1 tsp","baking soda"],["1 tsp","salt"],
    ["1 cup","butter, softened","(2 sticks)"],["¾ cup","granulated sugar"],["¾ cup","packed brown sugar"],
@@ -186,7 +186,7 @@ def iso(m): return f"PT{m}M" if m else None
 
 def jsonld(r):
     d = {"@context":"https://schema.org","@type":"Recipe","name":r["title"],
-         "author":{"@type":"Person","name":"Mom"},
+         "author":{"@type":"Person","name":r.get("from","Mom")},
          "image":[f"../cards/{r['card']}"]+([f"../cards/{r['back']}"] if r.get("back") else []),
          "recipeCategory":r["cat"],
          "recipeIngredient":[" ".join(x for x in i if x).strip() for g in r["groups"] for i in g["items"]],
@@ -220,11 +220,11 @@ def recipe_page(r):
   <div>
     <div class="kicker">{E(r['cat'])}</div>
     <h1>{E(r['title'])}</h1>
-    <div class="from">From the kitchen of Mom</div>
+    <div class="from">From the kitchen of {E(r.get("from","Mom"))}</div>
     <div class="facts">{facts}</div>
   </div>
-  <div><img class="cardimg" src="../cards/{r['card']}" alt="Mom's original recipe card for {E(r['title'])}">
-    {back_img}<div class="cardcap">Mom's original card{" (front and back)" if r.get("back") else ""} · tap to enlarge</div></div>
+  <div><img class="cardimg" src="../cards/{r['card']}" alt="Original recipe card for {E(r['title'])}">
+    {back_img}<div class="cardcap">{E(r.get('from','Mom'))}'s original card{" (front and back)" if r.get("back") else ""} · tap to enlarge</div></div>
 </section>
 <section class="body">
   <div>
@@ -250,7 +250,7 @@ def index_page():
         tiles.append(f'<a class="tile" href="recipes/{r["id"]}.html" data-cat="{E(r["cat"])}" data-words="{E(words)}">'
                      f'<div class="ph" style="background-image:url(\'cards/{r["card"]}\')"></div>'
                      f'<div class="bd"><div class="cat">{E(r["cat"])}</div><h3>{E(r["title"])}</h3>'
-                     f'<div class="meta">From the kitchen of Mom</div>{flag}</div></a>')
+                     f'<div class="meta">From the kitchen of {E(r.get("from","Mom"))}</div>{flag}</div></a>')
     body=f"""<section class="hero">
   <h1>From the kitchen of Mom</h1>
   <p>Recipes copied from her cow-print cards. {len(RECIPES)} recipes so far.</p>
