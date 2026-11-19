@@ -134,21 +134,58 @@ RECIPES = [
    {"s":"Add the Chablis."}],
  "notes":[]
 }
-]
-
-# On hold until the back of the card is photographed
-ON_HOLD = [
+,
 {
  "id":"stuffed-baked-potatoes","title":"Stuffed Baked Potatoes","cat":"Breads & Sides","date":"Dec 27, 1993",
- "card":"on-hold/stuffed-baked-potatoes.jpg","facts":[["Oven","350°F"],["Bake","1 hr"]],"cook":60,
+ "card":"stuffed-baked-potatoes.jpg","back":"stuffed-baked-potatoes-back.jpg",
+ "facts":[["Oven","350°F"],["Bake","1 hr + 30 min"],["Makes","8 potatoes"]],"cook":90,
  "groups":[{"items":[["8","russet potatoes"],["1 cup","sour cream"],["⅔ cup","milk"],["¼ cup","Parmesan cheese"],
-   ["¾ tsp","salt"],["¼ tsp","pepper"],["2 tsp","parsley flakes"],["","paprika"],["","grated cheddar cheese"]]}],
+   ["¾ tsp","salt"],["¼ tsp","pepper"],["2 tsp","parsley flakes"],["","Crisco","for greasing the skins"],["","grated cheddar cheese"],["","paprika"]]}],
  "steps":[{"s":"Grease the potato skins with Crisco."},
    {"s":"Bake 1 hour at 350°F, or until soft when pricked with a fork.","t":60},
-   {"s":"(Rest of the method is on the back of the card — coming in the next batch.)","added":True}],
- "notes":["Waiting on the back of the card."]
+   {"s":"Let cool. Cut off the top of each potato and scoop out the inside."},
+   {"s":"Mix the scooped-out potato with the sour cream, milk, Parmesan, parsley flakes, salt and pepper."},
+   {"s":"Restuff the potatoes with the mixture and top with grated cheddar."},
+   {"s":"Bake at 350°F for 30 minutes.","t":30},
+   {"s":"Sprinkle with paprika before serving."}],
+ "notes":[]
+},
+{
+ "id":"chocolate-marshmallow-frosting","title":"Chocolate Marshmallow Frosting","cat":"Desserts","date":"Undated",
+ "card":"chocolate-marshmallow-frosting.jpg","back":"chocolate-marshmallow-frosting-back.jpg",
+ "facts":[["Cook","Stovetop, low heat"],["For","Angel food cake"]],"cook":0,
+ "groups":[{"items":[["2 squares","unsweetened chocolate"],["2 tbsp","butter"],["⅓ cup","evaporated milk","(“canned milk” on the card)"],
+   ["1 tsp","vanilla"],["3 cups","powdered sugar","sifted"],["½ bag","miniature marshmallows","(about 5 oz from a 10 oz bag)"]]}],
+ "steps":[
+   {"s":"Melt the chocolate and butter in a saucepan over low heat."},
+   {"s":"Remove from the heat. Add the evaporated milk and stir with a wooden spoon."},
+   {"s":"Add the vanilla. Stir each time something is added."},
+   {"s":"Gradually add the powdered sugar, stirring over low heat until it dissolves."},
+   {"s":"Add the marshmallows and stir until they soften and just start to melt."},
+   {"s":"Remove from the heat and frost the cake."}],
+ "tips":["Do not use a mixer. It works better and is more manageable by stirring.",
+         "The card says 1 Tbsp of vanilla, but 1 tsp is plenty."],
+ "notes":[]
+},
+{
+ "id":"potato-salad","title":"Potato Salad","cat":"Salads","date":"Aug 6, 1994",
+ "card":"potato-salad.jpg","facts":[["Cook","Boil"],["Serve","Cold or room temperature"]],"cook":0,
+ "groups":[
+   {"name":"Salad","items":[["8","red potatoes"],["5","eggs"],["","salt and pepper"]]},
+   {"name":"Dressing","items":[["½ cup","mayonnaise"],["2 tbsp","cider vinegar"],["¼ tsp","dry mustard"]]}],
+ "steps":[
+   {"s":"Boil the potatoes until soft. Hard-boil the eggs."},
+   {"s":"Let the potatoes cool slightly, until you can handle them, then peel."},
+   {"s":"Cut the potatoes into bite-size pieces.","added":True},
+   {"s":"Peel and chop the eggs."},
+   {"s":"Mix the mayonnaise, cider vinegar and dry mustard."},
+   {"s":"Combine the potatoes and eggs with salt and pepper, then add the dressing until it tastes right."}],
+ "notes":[]
 }
 ]
+
+# Recipes waiting on missing info (none right now)
+ON_HOLD = []
 
 LOGO = '<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="2" y="6" width="30" height="22" rx="3" fill="#fff" stroke="#c8323c" stroke-width="2.5"/><ellipse cx="9" cy="13" rx="3.2" ry="2.4" fill="#2b2420"/><ellipse cx="24" cy="21" rx="4" ry="2.8" fill="#2b2420"/><ellipse cx="22" cy="11" rx="1.8" ry="1.4" fill="#2b2420"/></svg>'
 
@@ -211,6 +248,7 @@ def recipe_page(r):
         +(f' <button class="tbtn" data-t="{s["t"]}" data-l="{E(r["title"])}">⏱ {s["t"]} min</button>' if s.get("t") else "")
         +(' <span class="added">not on card</span>' if s.get("added") else "")+'</li>'
         for n,s in enumerate(r["steps"]))
+    tips=('<div class="notes tips"><h2>Mom&rsquo;s tips</h2><ul>'+"".join(f"<li>{E(x)}</li>" for x in r.get("tips",[]))+'</ul></div>') if r.get("tips") else ""
     notes=('<div class="notes"><h2>To check with Mom</h2><ul>'+"".join(f"<li>{E(x)}</li>" for x in r["notes"])+'</ul></div>') if r["notes"] else ""
     back_img=(f'<img class="cardimg cardback" src="../cards/{r["back"]}" alt="Back of the card">' if r.get("back") else "")
     facts="".join(f'<div class="fact"><b>{E(a)}</b>{E(b)}</div>' for a,b in r["facts"])
@@ -234,7 +272,7 @@ def recipe_page(r):
   <div>
     <h2>Method <small>tap a step to mark it done</small></h2>
     <ol class="steps">{steps}</ol>
-    {notes}
+    {tips}{notes}
   </div>
 </section>
 </article>"""
