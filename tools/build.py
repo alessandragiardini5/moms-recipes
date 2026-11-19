@@ -2,7 +2,7 @@
 Builds Mom's Recipe Box as a plain static website: index.html plus one page per
 recipe in recipes/, each with schema.org Recipe JSON-LD (for Apple HomeView).
 Recipe text lives in tools/recipes.py — edit that, never the generated HTML."""
-import json, os, re, shutil, html, sys
+import json, os, re, shutil, html, sys, hashlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
@@ -61,7 +61,7 @@ def page(title, body, root, extra_head=""):
 <title>{E(title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Caveat:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}style.css">
+<link rel="stylesheet" href="{root}style.css?v={VER["css"]}">
 {extra_head}</head>
 <body>
 <header><div class="wrap">
@@ -75,7 +75,7 @@ def page(title, body, root, extra_head=""):
 <div id="lb"><img alt=""></div>
 <div id="toast" role="status"></div>
 <script>window.FAV={{url:"{SUPABASE_URL}",key:"{SUPABASE_KEY}"}};</script>
-<script src="{root}app.js"></script>
+<script src="{root}app.js?v={VER["js"]}"></script>
 </body>
 </html>
 """
@@ -180,7 +180,7 @@ def index_page():
 <section class="favsec">
   <h2 class="sech"><span class="hearticon">{HEART}</span> Favorites</h2>
   <div class="grid" id="favgrid"></div>
-  <p class="empty" id="favempty">Tap the heart on any recipe to save it here.</p>
+  <div class="empty" id="favempty"><span class="hearticon outline">{HEART}</span><span>Tap the heart on any recipe to save it here.</span></div>
 </section>
 <h2 class="sech">All recipes</h2>
 <div class="filters">
@@ -204,10 +204,11 @@ EXTRA_CSS = """
 .titlerow{display:flex;align-items:center;gap:14px}
 .fav.big{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--card);flex:none}
 .fav.big svg{width:26px;height:26px}
-.sech{font-family:var(--serif);font-size:1.5rem;margin:28px 0 4px;display:flex;align-items:center;gap:8px;justify-content:flex-start}
+h2.sech{font-family:var(--serif);font-size:1.5rem;margin:28px 0 4px;display:flex;align-items:center;gap:8px;justify-content:flex-start}
 .hearticon svg{width:22px;height:22px;fill:var(--red);stroke:none;display:block}
 .favsec .grid{padding:14px 0 6px}
-.empty{color:var(--muted);font-size:.92rem;margin:6px 0 12px}
+.empty{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.95rem;margin:12px 0 8px;padding:18px 20px;border:1.5px dashed var(--line);border-radius:14px;background:rgba(255,253,248,.6)}
+.hearticon.outline svg{fill:none;stroke:var(--red);stroke-width:2}
 .empty[hidden],#favgrid:empty{display:none}
 /* scale / units / cook controls */
 .controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
@@ -406,11 +407,16 @@ Live at https://alessandragiardini5.github.io/moms-recipes/ — a plain static s
 - Favorites are shared through a free Supabase table (the free plan pauses after about a week without activity).
 """
 
+VER = {}
+
 if __name__ == "__main__":
     shutil.rmtree(os.path.join(ROOT, "recipes"), ignore_errors=True)
     os.makedirs(os.path.join(ROOT, "recipes"))
     open(os.path.join(ROOT, ".nojekyll"), "w").close()
-    open(os.path.join(ROOT, "style.css"), "w").write(open(os.path.join(ROOT, "tools/base.css")).read() + EXTRA_CSS)
+    css = open(os.path.join(ROOT, "tools/base.css")).read() + EXTRA_CSS
+    VER["css"] = hashlib.sha1(css.encode()).hexdigest()[:8]
+    VER["js"] = hashlib.sha1(APP_JS.encode()).hexdigest()[:8]
+    open(os.path.join(ROOT, "style.css"), "w").write(css)
     open(os.path.join(ROOT, "app.js"), "w").write(APP_JS)
     open(os.path.join(ROOT, "README.md"), "w").write(README)
     open(os.path.join(ROOT, "index.html"), "w").write(index_page())
