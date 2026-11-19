@@ -230,7 +230,10 @@ body.metric .nus{display:none}
 .ck-main h3{font-family:var(--serif);font-size:1.8rem;margin:0 0 12px}
 .ck-main h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--red);margin:18px 0 4px}
 .ck-main ul{list-style:none;padding:0;margin:0;font-size:clamp(1.15rem,2vw,1.5rem);columns:2 18ch;column-gap:48px}
-.ck-main li{padding:6px 0;border-bottom:1px dashed var(--line);break-inside:avoid}
+.ck-main li{padding:2px 0;border-bottom:1px dashed var(--line);break-inside:avoid}
+.ck-main ul.ing label{gap:16px;padding:10px 2px;align-items:center}
+.ck-main ul.ing input{width:30px;height:30px;margin-top:0;border-radius:8px}
+.ck-main ul.ing input:checked::after{width:8px;height:15px;border-width:0 3px 3px 0}
 .ck-main .tbtn{font-size:1.1rem;padding:8px 18px;margin:22px 0 0}
 .ck-bot{display:flex;justify-content:space-between;padding:16px 28px 22px;gap:12px}
 .ck-bot button{flex:1;max-width:260px;border-radius:16px;padding:16px;font-size:1.1rem;font-weight:600;border:1px solid var(--line);background:var(--card)}
@@ -349,7 +352,8 @@ if(art){
   const slides=1+data.steps.length;
   function ingHTML(){let h="";$$("#ingcol > h3, #ingcol > ul").forEach(el=>{
     if(el.tagName==="H3")h+=`<h4>${esc(el.textContent)}</h4>`;
-    else h+="<ul>"+$$("li",el).map(li=>`<li>${$("label > span",li).innerHTML}</li>`).join("")+"</ul>"});return h}
+    else h+='<ul class="ing">'+$$("li",el).map(li=>{const c=$("input",li);
+      return `<li><label><input type="checkbox" data-k="${c.dataset.k}"${c.checked?" checked":""}><span>${$("label > span",li).innerHTML}</span></label></li>`}).join("")+"</ul>"});return h}
   function show(){
     const s=idx===0?null:data.steps[idx-1];
     ck.innerHTML=`<div class="ck-top"><div><div class="ck-title">${esc(data.title)}</div><div class="ck-count">${idx===0?"Ingredients":"Step "+idx+" of "+data.steps.length}</div></div>
@@ -358,6 +362,7 @@ if(art){
       <div class="ck-dots">${Array.from({length:slides},(_,i)=>`<i class="${i===idx?"on":""}"></i>`).join("")}</div>
       <div class="ck-bot">${idx>0?'<button class="prev">← Back</button>':""}<button class="next">${idx===slides-1?"Done":idx===0?"Start cooking →":"Next →"}</button></div>`;
     renderAmounts(ck);
+    $$("ul.ing input",ck).forEach(c=>c.onchange=()=>{const pg=$(`#ingcol input[data-k="${c.dataset.k}"]`);pg.checked=c.checked;pg.onchange()});
     $(".ck-close",ck).onclick=close;
     const p=$(".prev",ck);if(p)p.onclick=()=>go(-1);
     $(".next",ck).onclick=()=>idx===slides-1?close():go(1);

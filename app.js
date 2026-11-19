@@ -103,7 +103,8 @@ if(art){
   const slides=1+data.steps.length;
   function ingHTML(){let h="";$$("#ingcol > h3, #ingcol > ul").forEach(el=>{
     if(el.tagName==="H3")h+=`<h4>${esc(el.textContent)}</h4>`;
-    else h+="<ul>"+$$("li",el).map(li=>`<li>${$("label > span",li).innerHTML}</li>`).join("")+"</ul>"});return h}
+    else h+='<ul class="ing">'+$$("li",el).map(li=>{const c=$("input",li);
+      return `<li><label><input type="checkbox" data-k="${c.dataset.k}"${c.checked?" checked":""}><span>${$("label > span",li).innerHTML}</span></label></li>`}).join("")+"</ul>"});return h}
   function show(){
     const s=idx===0?null:data.steps[idx-1];
     ck.innerHTML=`<div class="ck-top"><div><div class="ck-title">${esc(data.title)}</div><div class="ck-count">${idx===0?"Ingredients":"Step "+idx+" of "+data.steps.length}</div></div>
@@ -112,6 +113,7 @@ if(art){
       <div class="ck-dots">${Array.from({length:slides},(_,i)=>`<i class="${i===idx?"on":""}"></i>`).join("")}</div>
       <div class="ck-bot">${idx>0?'<button class="prev">← Back</button>':""}<button class="next">${idx===slides-1?"Done":idx===0?"Start cooking →":"Next →"}</button></div>`;
     renderAmounts(ck);
+    $$("ul.ing input",ck).forEach(c=>c.onchange=()=>{const pg=$(`#ingcol input[data-k="${c.dataset.k}"]`);pg.checked=c.checked;pg.onchange()});
     $(".ck-close",ck).onclick=close;
     const p=$(".prev",ck);if(p)p.onclick=()=>go(-1);
     $(".next",ck).onclick=()=>idx===slides-1?close():go(1);
