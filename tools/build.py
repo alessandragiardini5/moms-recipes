@@ -176,7 +176,7 @@ RECIPES = [
  "steps":[
    {"s":"Boil the potatoes until soft. Hard-boil the eggs."},
    {"s":"Let the potatoes cool slightly, until you can handle them, then peel."},
-   {"s":"Cut the potatoes into bite-size pieces.","added":True},
+   {"s":"Cut the potatoes into bite-size pieces."},
    {"s":"Peel and chop the eggs."},
    {"s":"Mix the mayonnaise, cider vinegar and dry mustard."},
    {"s":"Combine the potatoes and eggs with salt and pepper, then add the dressing until it tastes right."}],
