@@ -48,6 +48,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .fact b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
 .from{font-family:var(--hand);font-size:1.5rem;color:var(--blue)}
 .cardimg{width:100%;border-radius:10px;border:1px solid var(--line);cursor:zoom-in;display:block;background:#eee}
+.cardback{margin-top:10px}
 .cardcap{font-size:.78rem;color:var(--muted);margin-top:6px;text-align:center}
 .body{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:40px;padding:28px 0 120px}
 h2{font-family:var(--serif);font-size:1.4rem;margin:0 0 12px;display:flex;align-items:baseline;justify-content:space-between}

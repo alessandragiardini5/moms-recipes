@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mom's Recipes">
+<link rel="apple-touch-icon" href="../icon.png">
+<title>Punch · Mom&#x27;s Recipe Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Caveat:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Recipe",
+ "name": "Punch",
+ "author": {
+  "@type": "Person",
+  "name": "Mom"
+ },
+ "image": [
+  "../cards/punch.jpg"
+ ],
+ "recipeCategory": "Drinks",
+ "recipeIngredient": [
+  "1 small bottle cognac or brandy",
+  "1 can crushed pineapple",
+  "Chablis (white wine)"
+ ],
+ "recipeInstructions": [
+  {
+   "@type": "HowToStep",
+   "text": "Soak the crushed pineapple in the cognac or brandy."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Add the Chablis."
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="../index.html"><span>Mom's</span><b>Recipe Box</b></a>
+  <div class="tools"><button class="pill" id="bigBtn" aria-pressed="false">Large text</button></div>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← All recipes</a>
+<article data-recipe="punch">
+<section class="rhead">
+  <div>
+    <div class="kicker">Drinks</div>
+    <h1>Punch</h1>
+    <div class="from">From the kitchen of Mom</div>
+    <div class="facts"><div class="fact"><b>Cook</b>No cooking</div><div class="fact"><b>Contains</b>Alcohol</div></div>
+  </div>
+  <div><img class="cardimg" src="../cards/punch.jpg" alt="Mom's original recipe card for Punch">
+    <div class="cardcap">Mom's original card · tap to enlarge</div></div>
+</section>
+<section class="body">
+  <div>
+    <h2>Ingredients <small><button class="pill" id="clr">Reset</button></small></h2>
+    <ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q">1 small bottle</span> cognac or brandy</span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q">1 can</span> crushed pineapple</span></label></li><li><label><input type="checkbox" data-k="2"><span>Chablis (white wine)</span></label></li></ul>
+  </div>
+  <div>
+    <h2>Method <small>tap a step to mark it done</small></h2>
+    <ol class="steps"><li data-i="0">Soak the crushed pineapple in the cognac or brandy.</li><li data-i="1">Add the Chablis.</li></ol>
+    
+  </div>
+</section>
+</article>
+</main>
+<div id="timers"></div>
+<div id="lb"><img alt=""></div>
+<script src="../app.js"></script>
+</body>
+</html>

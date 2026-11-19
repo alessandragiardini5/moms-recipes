@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mom's Recipes">
+<link rel="apple-touch-icon" href="../icon.png">
+<title>Apple Pie · Mom&#x27;s Recipe Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Caveat:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Recipe",
+ "name": "Apple Pie",
+ "author": {
+  "@type": "Person",
+  "name": "Mom"
+ },
+ "image": [
+  "../cards/apple-pie.jpg",
+  "../cards/apple-pie-back.jpg"
+ ],
+ "recipeCategory": "Desserts",
+ "recipeIngredient": [
+  "¾–1 cup sugar",
+  "½ tsp cinnamon",
+  "½ tsp nutmeg",
+  "about 7 pippin or Granny Smith apples peeled and sliced",
+  "1 handful water",
+  "½ lemon, juiced",
+  "1½ tsp butter dotted",
+  "pie crust (bottom and top)"
+ ],
+ "recipeInstructions": [
+  {
+   "@type": "HowToStep",
+   "text": "Peel and slice about 7 pippin or Granny Smith apples."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Mix the sugar and spices."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Either stir the sugar mixture through the apples in a bowl, or pour it over the apples in the pie shell."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Drip a handful of water over the apples."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Squeeze the juice of ½ lemon over the apples, then dot with 1½ tsp butter."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Place the top crust over the pie and crimp."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Bake at 425°F for 50–60 minutes (start checking at 50)."
+  }
+ ],
+ "cookTime": "PT60M",
+ "totalTime": "PT60M"
+}
+</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="../index.html"><span>Mom's</span><b>Recipe Box</b></a>
+  <div class="tools"><button class="pill" id="bigBtn" aria-pressed="false">Large text</button></div>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← All recipes</a>
+<article data-recipe="apple-pie">
+<section class="rhead">
+  <div>
+    <div class="kicker">Desserts</div>
+    <h1>Apple Pie</h1>
+    <div class="from">From the kitchen of Mom</div>
+    <div class="facts"><div class="fact"><b>Oven</b>425°F</div><div class="fact"><b>Bake</b>50–60 min</div><div class="fact"><b>Size</b>9-inch pie</div><div class="fact"><b>Serves</b>8</div></div>
+  </div>
+  <div><img class="cardimg" src="../cards/apple-pie.jpg" alt="Mom's original recipe card for Apple Pie">
+    <img class="cardimg cardback" src="../cards/apple-pie-back.jpg" alt="Back of the card"><div class="cardcap">Mom's original card (front and back) · tap to enlarge</div></div>
+</section>
+<section class="body">
+  <div>
+    <h2>Ingredients <small><button class="pill" id="clr">Reset</button></small></h2>
+    <h3 class="sub">Filling</h3><ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q">¾–1 cup</span> sugar</span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q">½ tsp</span> cinnamon</span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q">½ tsp</span> nutmeg</span></label></li><li><label><input type="checkbox" data-k="3"><span><span class="q">about 7</span> pippin or Granny Smith apples <span class="n">peeled and sliced</span></span></label></li><li><label><input type="checkbox" data-k="4"><span><span class="q">1 handful</span> water</span></label></li><li><label><input type="checkbox" data-k="5"><span><span class="q">½</span> lemon, juiced</span></label></li><li><label><input type="checkbox" data-k="6"><span><span class="q">1½ tsp</span> butter <span class="n">dotted</span></span></label></li></ul><h3 class="sub">Crust</h3><ul class="ing"><li><label><input type="checkbox" data-k="7"><span>pie crust <span class="n">(bottom and top)</span></span></label></li></ul>
+  </div>
+  <div>
+    <h2>Method <small>tap a step to mark it done</small></h2>
+    <ol class="steps"><li data-i="0">Peel and slice about 7 pippin or Granny Smith apples.</li><li data-i="1">Mix the sugar and spices.</li><li data-i="2">Either stir the sugar mixture through the apples in a bowl, or pour it over the apples in the pie shell.</li><li data-i="3">Drip a handful of water over the apples.</li><li data-i="4">Squeeze the juice of ½ lemon over the apples, then dot with 1½ tsp butter.</li><li data-i="5">Place the top crust over the pie and crimp.</li><li data-i="6">Bake at 425°F for 50–60 minutes (start checking at 50). <button class="tbtn" data-t="60" data-l="Apple Pie">⏱ 60 min</button></li></ol>
+    
+  </div>
+</section>
+</article>
+</main>
+<div id="timers"></div>
+<div id="lb"><img alt=""></div>
+<script src="../app.js"></script>
+</body>
+</html>

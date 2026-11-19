@@ -56,26 +56,97 @@ RECIPES = [
                      ["1 can","crab"],["½ tsp","ground mustard"],["","red food coloring","(if desired)"]]}],
  "steps":[{"s":"Mix everything together and refrigerate."},{"s":"Serve with water crackers!"}],
  "notes":[]
+},
+{
+ "id":"apple-pie","title":"Apple Pie","cat":"Desserts","date":"Undated",
+ "card":"apple-pie.jpg","back":"apple-pie-back.jpg",
+ "facts":[["Oven","425°F"],["Bake","50–60 min"],["Size","9-inch pie"],["Serves","8"]],"cook":60,
+ "groups":[
+   {"name":"Filling","items":[["¾–1 cup","sugar"],["½ tsp","cinnamon"],["½ tsp","nutmeg"],
+     ["about 7","pippin or Granny Smith apples","peeled and sliced"],["1 handful","water"],["½","lemon, juiced"],["1½ tsp","butter","dotted"]]},
+   {"name":"Crust","items":[["","pie crust","(bottom and top)"]]}],
+ "steps":[
+   {"s":"Peel and slice about 7 pippin or Granny Smith apples."},
+   {"s":"Mix the sugar and spices."},
+   {"s":"Either stir the sugar mixture through the apples in a bowl, or pour it over the apples in the pie shell."},
+   {"s":"Drip a handful of water over the apples."},
+   {"s":"Squeeze the juice of ½ lemon over the apples, then dot with 1½ tsp butter."},
+   {"s":"Place the top crust over the pie and crimp."},
+   {"s":"Bake at 425°F for 50–60 minutes (start checking at 50).","t":60}],
+ "notes":[]
+},
+{
+ "id":"chocolate-chip-cookies","title":"Chocolate Chip Cookies","cat":"Desserts","date":"March 26, 2001",
+ "card":"chocolate-chip-cookies.jpg","facts":[["Oven","375°F"],["Bake","9–11 min"],["Source","Nestlé Toll House package, taped to Mom's card"]],"cook":11,
+ "groups":[{"items":[["2¼ cups","all-purpose flour"],["1 tsp","baking soda"],["1 tsp","salt"],
+   ["1 cup","butter, softened","(2 sticks)"],["¾ cup","granulated sugar"],["¾ cup","packed brown sugar"],
+   ["1 tsp","vanilla extract"],["2","eggs"],["2 cups","semi-sweet chocolate morsels","(12 oz package)"],["1 cup","chopped nuts"]]}],
+ "steps":[
+   {"s":"Preheat the oven to 375°F."},
+   {"s":"In a small bowl, combine the flour, baking soda and salt."},
+   {"s":"In a large mixer bowl, beat the butter, both sugars and the vanilla until creamy."},
+   {"s":"Add the eggs one at a time, beating well after each."},
+   {"s":"Gradually beat in the flour mixture, then stir in the chocolate morsels and nuts."},
+   {"s":"Drop by rounded tablespoons onto ungreased baking sheets."},
+   {"s":"Bake 9–11 minutes, until golden brown (start checking at 9).","t":11},
+   {"s":"Let stand on the sheets for 2 minutes, then move to wire racks to cool completely.","t":2}],
+ "notes":[]
+},
+{
+ "id":"spinach-salad","title":"Spinach Salad","cat":"Salads","date":"Dec 25, 1996",
+ "card":"spinach-salad.jpg","back":"spinach-salad-back.jpg",
+ "facts":[["Oven","None"],["Dressing","Shake in a jar"]],"cook":0,
+ "groups":[
+   {"name":"Salad","items":[["1–2 bunches","spinach","washed and dried"],["½ cup","slivered almonds","toasted"],
+     ["3 strips","bacon","crisp, crumbled"],["1","red apple","chopped, peel on"],["","lemon juice"]]},
+   {"name":"Dressing","items":[["⅓ cup","oil"],["¼ cup","tarragon vinegar"],["½ cup","sugar"],
+     ["½ tsp","dry mustard"],["½ tsp","salt"],["","pepper","to taste (about ⅛ tsp)"]]}],
+ "steps":[
+   {"s":"Combine the spinach, toasted almonds, crumbled bacon, chopped apple and lemon juice."},
+   {"s":"Dressing: mix together the oil, tarragon vinegar, sugar, dry mustard, salt and pepper."},
+   {"s":"Shake well, pour over the salad and toss."}],
+ "notes":[]
+},
+{
+ "id":"black-bottom-cupcakes","title":"Black Bottom Cupcakes","cat":"Desserts","date":"Jan 26, 2002",
+ "card":"black-bottom-cupcakes.jpg","back":"black-bottom-cupcakes-back.jpg",
+ "facts":[["Oven","350°F"],["Bake","25–30 min"],["Minis","15 min"]],"cook":30,
+ "groups":[
+   {"name":"Cream cheese topping","items":[["1 cup","cream cheese","(8 oz package)"],["1","egg"],["⅓ cup","sugar"],
+     ["⅛ tsp","salt"],["1 cup","semi-sweet chocolate chips","(6 oz package)"]]},
+   {"name":"Chocolate batter — sift","items":[["1½ cups","flour"],["1 cup","sugar"],["1 tsp","baking soda"],["½ tsp","salt"],["¼ cup","cocoa"]]},
+   {"name":"Chocolate batter — add and beat","items":[["1 cup","water"],["⅓ cup","oil"],["1 tbsp","white vinegar"],["1 tsp","vanilla"]]}],
+ "steps":[
+   {"s":"Topping: mix the cream cheese, egg, sugar and salt; stir in the chocolate chips."},
+   {"s":"Sift together the flour, sugar, baking soda, salt and cocoa."},
+   {"s":"Add the water, oil, vinegar and vanilla, and beat."},
+   {"s":"Fill cupcake cups ½ full with the chocolate batter, then top each with a small scoop of the cream cheese topping."},
+   {"s":"Bake at 350°F for 25–30 minutes (start checking at 25).","t":30},
+   {"s":"For mini cupcakes, bake 15 minutes.","t":15}],
+ "notes":[]
+},
+{
+ "id":"punch","title":"Punch","cat":"Drinks","date":"Dec 28, 1993",
+ "card":"punch.jpg","facts":[["Cook","No cooking"],["Contains","Alcohol"]],"cook":0,
+ "groups":[{"items":[["1 small bottle","cognac or brandy"],["1 can","crushed pineapple"],["","Chablis (white wine)"]]}],
+ "steps":[
+   {"s":"Soak the crushed pineapple in the cognac or brandy."},
+   {"s":"Add the Chablis."}],
+ "notes":[]
 }
 ]
 
-# On hold until the front of the card is photographed
+# On hold until the back of the card is photographed
 ON_HOLD = [
 {
- "id":"apple-pie","title":"Apple Pie","cat":"Desserts","date":"Undated","incomplete":True,
- "card":"apple-pie-back.jpg","facts":[["Oven","425°F"],["Bake","50–60 min"]],"cook":60,
- "groups":[{"name":"From the back of the card","items":[["","apples"],["","pie crust","(bottom and top)"],
-            ["1 handful","water"],["½","lemon, juiced"],["1½ tsp","butter, dotted"]]}],
- "steps":[
-   {"s":"(The beginning of the recipe is on the front of the card — not photographed yet.)","added":True},
-   {"s":"…apples in a bowl, or pour over in the pie shell."},
-   {"s":"Drip a handful of water over the apples."},
-   {"s":"Squeeze the juice of ½ lemon over the apples before adding 1½ tsp dotted butter."},
-   {"s":"Place the top crust over the pie and crimp."},
-   {"s":"Bake at 425°F for 50–60 minutes.","t":60}],
- "notes":["Only the back of this card was in the batch — please photograph the front (ingredients and the first steps).",
-          "Different handwriting and card from the others — whose recipe is it?",
-          "The 50–60 min timer is set to 60; start checking at 50."]
+ "id":"stuffed-baked-potatoes","title":"Stuffed Baked Potatoes","cat":"Breads & Sides","date":"Dec 27, 1993",
+ "card":"on-hold/stuffed-baked-potatoes.jpg","facts":[["Oven","350°F"],["Bake","1 hr"]],"cook":60,
+ "groups":[{"items":[["8","russet potatoes"],["1 cup","sour cream"],["⅔ cup","milk"],["¼ cup","Parmesan cheese"],
+   ["¾ tsp","salt"],["¼ tsp","pepper"],["2 tsp","parsley flakes"],["","paprika"],["","grated cheddar cheese"]]}],
+ "steps":[{"s":"Grease the potato skins with Crisco."},
+   {"s":"Bake 1 hour at 350°F, or until soft when pricked with a fork.","t":60},
+   {"s":"(Rest of the method is on the back of the card — coming in the next batch.)","added":True}],
+ "notes":["Waiting on the back of the card."]
 }
 ]
 
@@ -116,7 +187,7 @@ def iso(m): return f"PT{m}M" if m else None
 def jsonld(r):
     d = {"@context":"https://schema.org","@type":"Recipe","name":r["title"],
          "author":{"@type":"Person","name":"Mom"},
-         "image":[f"../cards/{r['card']}"],
+         "image":[f"../cards/{r['card']}"]+([f"../cards/{r['back']}"] if r.get("back") else []),
          "recipeCategory":r["cat"],
          "recipeIngredient":[" ".join(x for x in i if x).strip() for g in r["groups"] for i in g["items"]],
          "recipeInstructions":[{"@type":"HowToStep","text":s["s"]} for s in r["steps"] if not s["s"].startswith("(")]}
@@ -141,6 +212,7 @@ def recipe_page(r):
         +(' <span class="added">not on card</span>' if s.get("added") else "")+'</li>'
         for n,s in enumerate(r["steps"]))
     notes=('<div class="notes"><h2>To check with Mom</h2><ul>'+"".join(f"<li>{E(x)}</li>" for x in r["notes"])+'</ul></div>') if r["notes"] else ""
+    back_img=(f'<img class="cardimg cardback" src="../cards/{r["back"]}" alt="Back of the card">' if r.get("back") else "")
     facts="".join(f'<div class="fact"><b>{E(a)}</b>{E(b)}</div>' for a,b in r["facts"])
     body=f"""<a class="back" href="../index.html">← All recipes</a>
 <article data-recipe="{r['id']}">
@@ -152,7 +224,7 @@ def recipe_page(r):
     <div class="facts">{facts}</div>
   </div>
   <div><img class="cardimg" src="../cards/{r['card']}" alt="Mom's original recipe card for {E(r['title'])}">
-    <div class="cardcap">Mom's original card · tap to enlarge</div></div>
+    {back_img}<div class="cardcap">Mom's original card{" (front and back)" if r.get("back") else ""} · tap to enlarge</div></div>
 </section>
 <section class="body">
   <div>
