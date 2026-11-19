@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mom's Recipes">
+<link rel="apple-touch-icon" href="../icon.png">
+<title>Cheese Bread · Mom&#x27;s Recipe Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Caveat:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Recipe",
+ "name": "Cheese Bread",
+ "author": {
+  "@type": "Person",
+  "name": "Mom"
+ },
+ "image": [
+  "../cards/cheese-bread.jpg"
+ ],
+ "recipeCategory": "Breads & Sides",
+ "recipeIngredient": [
+  "1 loaf day-old sliced bread",
+  "3 eggs",
+  "3 tsp milk",
+  "melted butter",
+  "Parmesan cheese"
+ ],
+ "recipeInstructions": [
+  {
+   "@type": "HowToStep",
+   "text": "Remove the crusts from the bread."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Beat the eggs and milk into a batter."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Work in stacks of 3 slices: leave the 1st slice plain, dip the 2nd slice in the egg-and-milk batter, leave the 3rd slice plain."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Stack all three together, with the battered slice in the middle."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Coat the bread in melted butter and Parmesan cheese."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Bake at 400°F for 10 minutes."
+  }
+ ],
+ "cookTime": "PT10M",
+ "totalTime": "PT10M"
+}
+</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="../index.html"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="2" y="6" width="30" height="22" rx="3" fill="#fff" stroke="#c8323c" stroke-width="2.5"/><ellipse cx="9" cy="13" rx="3.2" ry="2.4" fill="#2b2420"/><ellipse cx="24" cy="21" rx="4" ry="2.8" fill="#2b2420"/><ellipse cx="22" cy="11" rx="1.8" ry="1.4" fill="#2b2420"/></svg><b>Mom's Recipe Box</b></a>
+  <div class="tools"><button class="pill" id="bigBtn" aria-pressed="false">Large text</button></div>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← All recipes</a>
+<article data-recipe="cheese-bread">
+<section class="rhead">
+  <div>
+    <div class="kicker">Breads &amp; Sides</div>
+    <h1>Cheese Bread</h1>
+    <div class="from">From the kitchen of Mom · Dec 28, 1993</div>
+    <div class="facts"><div class="fact"><b>Oven</b>400°F</div><div class="fact"><b>Bake</b>10 min</div></div>
+  </div>
+  <div><img class="cardimg" src="../cards/cheese-bread.jpg" alt="Mom's original recipe card for Cheese Bread">
+    <div class="cardcap">Mom's original card · tap to enlarge</div></div>
+</section>
+<section class="body">
+  <div>
+    <h2>Ingredients <small><button class="pill" id="clr">Reset</button></small></h2>
+    <ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q">1 loaf</span> day-old sliced bread</span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q">3</span> eggs</span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q">3 tsp</span> milk</span></label></li><li><label><input type="checkbox" data-k="3"><span>melted butter</span></label></li><li><label><input type="checkbox" data-k="4"><span>Parmesan cheese</span></label></li></ul>
+  </div>
+  <div>
+    <h2>Method <small>tap a step to mark it done</small></h2>
+    <ol class="steps"><li data-i="0">Remove the crusts from the bread.</li><li data-i="1">Beat the eggs and milk into a batter.</li><li data-i="2">Work in stacks of 3 slices: leave the 1st slice plain, dip the 2nd slice in the egg-and-milk batter, leave the 3rd slice plain.</li><li data-i="3">Stack all three together, with the battered slice in the middle.</li><li data-i="4">Coat the bread in melted butter and Parmesan cheese.</li><li data-i="5">Bake at 400°F for 10 minutes. <button class="tbtn" data-t="10" data-l="Cheese Bread">⏱ 10 min</button></li></ol>
+    
+  </div>
+</section>
+</article>
+</main>
+<div id="timers"></div>
+<div id="lb"><img alt=""></div>
+<script src="../app.js"></script>
+</body>
+</html>

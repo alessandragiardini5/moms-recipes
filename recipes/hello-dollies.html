@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mom's Recipes">
+<link rel="apple-touch-icon" href="../icon.png">
+<title>Hello Dollies · Mom&#x27;s Recipe Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Caveat:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Recipe",
+ "name": "Hello Dollies",
+ "author": {
+  "@type": "Person",
+  "name": "Mom"
+ },
+ "image": [
+  "../cards/hello-dollies.jpg"
+ ],
+ "recipeCategory": "Desserts",
+ "recipeIngredient": [
+  "1 cube butter, melted (1 stick / ½ cup)",
+  "1½ cups graham cracker crumbs",
+  "1 cup chopped walnuts",
+  "1 cup chocolate chips",
+  "1⅓ cups flaked coconut",
+  "1 can Eagle Brand sweetened condensed milk",
+  "12 oz butterscotch chips"
+ ],
+ "recipeInstructions": [
+  {
+   "@type": "HowToStep",
+   "text": "Layer everything in a baking pan: melted butter, then the graham crumbs, walnuts, chocolate chips, butterscotch chips and coconut; pour the condensed milk evenly over the top."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Bake at 350°F for 25 minutes."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Cool before cutting into bars."
+  }
+ ],
+ "cookTime": "PT25M",
+ "totalTime": "PT25M"
+}
+</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="../index.html"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="2" y="6" width="30" height="22" rx="3" fill="#fff" stroke="#c8323c" stroke-width="2.5"/><ellipse cx="9" cy="13" rx="3.2" ry="2.4" fill="#2b2420"/><ellipse cx="24" cy="21" rx="4" ry="2.8" fill="#2b2420"/><ellipse cx="22" cy="11" rx="1.8" ry="1.4" fill="#2b2420"/></svg><b>Mom's Recipe Box</b></a>
+  <div class="tools"><button class="pill" id="bigBtn" aria-pressed="false">Large text</button></div>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← All recipes</a>
+<article data-recipe="hello-dollies">
+<section class="rhead">
+  <div>
+    <div class="kicker">Desserts</div>
+    <h1>Hello Dollies</h1>
+    <div class="from">From the kitchen of Mom · March 2001 (card says “3-01”)</div>
+    <div class="facts"><div class="fact"><b>Oven</b>350°F</div><div class="fact"><b>Bake</b>25 min</div></div>
+  </div>
+  <div><img class="cardimg" src="../cards/hello-dollies.jpg" alt="Mom's original recipe card for Hello Dollies">
+    <div class="cardcap">Mom's original card · tap to enlarge</div></div>
+</section>
+<section class="body">
+  <div>
+    <h2>Ingredients <small><button class="pill" id="clr">Reset</button></small></h2>
+    <ul class="ing"><li><label><input type="checkbox" data-k="0"><span><span class="q">1 cube</span> butter, melted <span class="n">(1 stick / ½ cup)</span></span></label></li><li><label><input type="checkbox" data-k="1"><span><span class="q">1½ cups</span> graham cracker crumbs</span></label></li><li><label><input type="checkbox" data-k="2"><span><span class="q">1 cup</span> chopped walnuts</span></label></li><li><label><input type="checkbox" data-k="3"><span><span class="q">1 cup</span> chocolate chips</span></label></li><li><label><input type="checkbox" data-k="4"><span><span class="q">1⅓ cups</span> flaked coconut</span></label></li><li><label><input type="checkbox" data-k="5"><span><span class="q">1 can</span> Eagle Brand sweetened condensed milk</span></label></li><li><label><input type="checkbox" data-k="6"><span><span class="q">12 oz</span> butterscotch chips</span></label></li></ul>
+  </div>
+  <div>
+    <h2>Method <small>tap a step to mark it done</small></h2>
+    <ol class="steps"><li data-i="0">Layer everything in a baking pan: melted butter, then the graham crumbs, walnuts, chocolate chips, butterscotch chips and coconut; pour the condensed milk evenly over the top.</li><li data-i="1">Bake at 350°F for 25 minutes. <button class="tbtn" data-t="25" data-l="Hello Dollies">⏱ 25 min</button></li><li data-i="2">Cool before cutting into bars.</li></ol>
+    
+  </div>
+</section>
+</article>
+</main>
+<div id="timers"></div>
+<div id="lb"><img alt=""></div>
+<script src="../app.js"></script>
+</body>
+</html>
