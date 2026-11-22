@@ -563,6 +563,40 @@ RECIPES = [
    {"s":"Spread on paper towels to cool. Store in an airtight container."}],
  "notes":[]
 },
+{
+ "id":"lasagne","title":"Lasagne","cat":"Mains",
+ "card":"lasagne.jpg","cook":30,
+ "facts":[["Oven","375°F"],["Bake","30 min"],["Dish","13×9 casserole"],["Serves","6–8"]],
+ "groups":[
+   {"name":"Meat sauce","items":[
+     {"q":1,"u":"lb","i":"ground chuck"},
+     {"q":1,"u":"tbsp","i":"olive oil"},
+     {"q":1,"i":"clove garlic, minced"},
+     {"q":1,"u":"tbsp","i":"parsley flakes"},
+     {"q":1,"u":"tbsp","i":"basil"},
+     {"q":2,"u":"tsp","i":"salt"},
+     {"q":1,"u":"can","i":"whole peeled tomatoes","n":"large can","nus":"28 oz","ge":794},
+     {"q":1,"u":"can","i":"tomato paste","nus":"6 oz","ge":170}]},
+   {"name":"Cheese mixture","items":[
+     {"q":24,"u":"oz","i":"cottage cheese","n":"three 8 oz cartons"},
+     {"q":2,"i":"eggs, beaten"},
+     {"q":1,"u":"tsp","i":"salt"},
+     {"q":0.5,"u":"tsp","i":"pepper"},
+     {"q":2,"u":"tbsp","i":"parsley flakes"},
+     {"q":0.5,"u":"cup","i":"grated Parmesan cheese","n":"save a little for the top","gpc":100}]},
+   {"name":"Also","items":[
+     {"q":1,"u":"lb","i":"mozzarella cheese, grated"},
+     {"q":1,"u":"package","i":"lasagne noodles","nus":"1 lb","ge":454}]}],
+ "steps":[
+   {"s":"Brown the ground chuck in the olive oil, then add the garlic, parsley, basil, salt, tomatoes and tomato paste. Simmer uncovered."},
+   {"s":"Cook the noodles and rinse them in cold water."},
+   {"s":"Combine the cottage cheese, eggs, salt, pepper, parsley and Parmesan (save a little Parmesan for the top)."},
+   {"s":"In a 13×9 casserole dish, layer noodles, cottage cheese mixture, mozzarella and meat sauce. Repeat, then sprinkle the saved Parmesan on top."},
+   {"s":"Bake at 375°F for 30 minutes.","t":30},
+   {"s":"Let stand 10 minutes before serving.","t":10}],
+ "tips":["Freezes well. Freezer to oven: cook 1 hr."],
+ "notes":[]
+},
 ]
 
 # Recipes waiting on missing info.
