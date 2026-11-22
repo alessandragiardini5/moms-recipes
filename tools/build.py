@@ -127,7 +127,7 @@ def recipe_page(r):
   <div>
     <div class="kicker">{E(r['cat'])}</div>
     <div class="titlerow"><h1>{E(r['title'])}</h1>{fav_btn(r['id'], ' big')}</div>
-    <div class="from">From the kitchen of {E(who)}</div>
+    <div class="from">{E(from_line(r))}</div>
     <div class="facts">{''.join(fact_html(f) for f in r['facts'])}</div>
     <div class="controls">
       <div class="seg" id="scale" role="group" aria-label="Recipe amount">
@@ -163,13 +163,18 @@ def flag(r):
     n = len(r["notes"])
     return f'<span class="flag">{n} thing{"s" if n > 1 else ""} to check</span>' if n else ""
 
+def from_line(r):
+    """"From the kitchen of Mom" by default; "fromline" overrides the whole line (e.g. "From Neiman Marcus")."""
+    return r.get("fromline") or f"From the kitchen of {r.get('from', 'Mom')}"
+
+
 def tile(r):
     words = " ".join([r["title"], r.get("from", "Mom")] + [i["i"] for g in r["groups"] for i in g["items"]]).lower()
     return (f'<a class="tile" href="recipes/{r["id"]}.html" data-id="{r["id"]}" data-cat="{E(r["cat"])}" data-words="{E(words)}">'
             f'{fav_btn(r["id"])}'
             f'<div class="ph" style="background-image:url(\'cards/{r["card"]}\')"></div>'
             f'<div class="bd"><div class="cat">{E(r["cat"])}</div><h3>{E(r["title"])}</h3>'
-            f'<div class="meta">From the kitchen of {E(r.get("from", "Mom"))}</div>{flag(r)}</div></a>')
+            f'<div class="meta">{E(from_line(r))}</div>{flag(r)}</div></a>')
 
 def index_page():
     cats = ["All"] + sorted({r["cat"] for r in RECIPES})

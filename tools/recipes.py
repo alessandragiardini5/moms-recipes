@@ -1,7 +1,8 @@
 """Mom's recipes — the only file to edit when adding or correcting recipes.
 
 Recipe fields: id, title, cat, card (photo in cards/), back (optional photo of the card's back),
-from (default "Mom"; "Angela" for cards signed A. Dotson), cook (minutes, for HomeView),
+from (default "Mom"; "Angela" for cards signed A. Dotson), fromline (replaces the whole
+"From the kitchen of …" line, e.g. "From Neiman Marcus"), cook (minutes, for HomeView),
 facts, groups, steps, tips (Mom's tips shown as "Mom's tips"), notes (open questions only).
 
 Ingredient fields:
@@ -284,7 +285,155 @@ RECIPES = [
    {"s":"Combine the potatoes and eggs with salt and pepper, then add the dressing until it tastes right."}],
  "notes":[]
 },
+{
+ "id":"chinese-stir-fry","title":"Chinese Stir Fry","cat":"Mains",
+ "card":"chinese-stir-fry.jpg","cook":10,
+ "facts":[["Cook","Stovetop, medium-high"],["Serve","Over rice"]],
+ "groups":[
+   {"name":"Stir fry","items":[
+     {"q":1,"q2":1.5,"u":"lb","i":"stir-fry beef","n":"leave in strips"},
+     {"q":1,"u":"bag","i":"frozen Asian-style vegetable medley","n":"or veggies like peppers, broccoli, cauliflower"},
+     {"q":1,"u":"tbsp","i":"water"},
+     {"q":2,"u":"tbsp","i":"stir-fry sauce"},
+     {"i":"cooking spray or canola oil"}]},
+   {"name":"Rice","items":[
+     {"q":1,"u":"cup","i":"Minute Rice","n":"follow box directions","gpc":95},
+     {"q":1,"u":"cup","i":"water"}]}],
+ "steps":[
+   {"s":"Cook the rice according to the box directions."},
+   {"s":"Heat a non-stick skillet over medium-high heat with cooking spray or canola oil."},
+   {"s":"Cook the beef in the skillet for 2 minutes, stirring, until browned.","t":2},
+   {"s":"Stir in the veggies and 1 tbsp water. Cook 1 minute while stirring.","t":1},
+   {"s":"Stir in the stir-fry sauce until well mixed. Reduce the heat to medium, cover and cook 2–3 minutes, stirring frequently, until all the veggies are tender-crisp.","t":3},
+   {"s":"Serve the beef over the rice."}],
+ "notes":[]
+},
+{
+ "id":"vegetable-beef-soup","title":"Vegetable-Beef Soup","cat":"Mains",
+ "card":"vegetable-beef-soup.jpg","cook":360,
+ "facts":[["Cook","Crockpot on high"],["Time","6 hr"],["Makes","quarts",6]],
+ "groups":[
+   {"items":[
+     {"q":3,"u":"lb","i":"stew meat"},
+     {"q":12,"u":"cup","i":"water","nus":"3 quarts"},
+     {"q":1,"u":"can","i":"beef broth (Campbell's)","nus":"10.5 oz","ge":298},
+     {"q":2,"u":"tbsp","i":"salt"},
+     {"q":0.25,"u":"tsp","i":"pepper"},
+     {"q":1,"i":"clove garlic, mashed"},
+     {"q":1,"i":"medium onion, chopped"},
+     {"q":1,"u":"bag","i":"frozen mixed vegetables"},
+     {"q":1,"u":"can","i":"diced tomatoes","nus":"1 lb 12 oz (3½ cups)","ge":794},
+     {"q":2,"u":"tsp","i":"parsley flakes"}]},
+   {"name":"Optional add-ins","items":[
+     {"q":1,"u":"cup","i":"frozen peas, corn and/or green beans","n":"1 cup of each you use","gpc":140},
+     {"q":1/3,"u":"cup","i":"barley, regular rice or broken-up spaghetti","n":"instead of the extra vegetables","gpc":200}]}],
+ "steps":[
+   {"s":"Put the stew meat, water, beef broth, salt, pepper, garlic, onion, frozen mixed vegetables, tomatoes and parsley flakes in the crockpot."},
+   {"s":"Cover and cook on high for 6 hours.","t":360},
+   {"s":"Optional: add the frozen peas, corn or green beans just long enough before serving for them to cook tender. Or add the barley, rice or broken-up spaghetti instead."}],
+ "notes":[]
+},
+{
+ "id":"zucchini-bread","title":"Zucchini Bread","cat":"Breads & Sides",
+ "card":"zucchini-bread.jpg","back":"zucchini-bread-back.jpg","cook":45,
+ "facts":[["Oven","350°F"],["Bake","40 min +"],["Pan","9×5-inch loaf"]],
+ "groups":[{"items":[
+   {"q":1,"u":"cup","i":"presifted flour","gpc":115},
+   {"q":1,"u":"tsp","i":"baking powder"},
+   {"q":1,"u":"tsp","i":"baking soda"},
+   {"i":"salt","n":"a pinch"},
+   {"q":1.5,"u":"tsp","i":"cinnamon"},
+   {"q":0.5,"u":"cup","i":"vegetable oil"},
+   {"q":2,"i":"eggs"},
+   {"q":1.5,"u":"cup","i":"shredded, unpeeled zucchini","gpc":125},
+   {"q":1,"u":"tsp","i":"vanilla"},
+   {"q":2,"u":"tbsp","i":"molasses"},
+   {"q":2/3,"u":"cup","i":"sugar","gpc":200}]}],
+ "steps":[
+   {"s":"Blend the wet and dry ingredients separately, then mix them together in the mixing bowl."},
+   {"s":"Blend all the ingredients at low speed until moistened, then beat at medium speed for 1 minute.","t":1},
+   {"s":"Spread the batter in a 9×5-inch loaf pan sprayed with baking spray."},
+   {"s":"Bake at 350°F. Check at 40 minutes, then about every 5 minutes until done.","t":40}],
+ "tips":["Times on ovens seem to vary. Happy eating!"],
+ "notes":[]
+},
+{
+ "id":"cinnamon-toast","title":"Cinnamon Toast","cat":"Breads & Sides",
+ "card":"cinnamon-toast.jpg","cook":4,
+ "facts":[["Oven","400°F"],["Bake","3–4 min"]],
+ "groups":[{"items":[
+   {"i":"bread"},
+   {"i":"butter, melted"},
+   {"i":"cinnamon sugar","n":"1 part cinnamon to 6 parts sugar"}]}],
+ "steps":[
+   {"s":"Toast the bread in the toaster."},
+   {"s":"Dip one side in the melted butter, then dip the buttered side in the cinnamon sugar."},
+   {"s":"Place in a hot oven (400°F) for 3–4 minutes.","t":4}],
+ "tips":["Crunchy taste treat."],
+ "notes":[]
+},
+{
+ "id":"neiman-marcus-cookies","title":"Neiman Marcus Chocolate Chip Cookies","cat":"Desserts",
+ "fromline":"From Neiman Marcus",
+ "card":"neiman-marcus-cookies.jpg","cook":20,
+ "facts":[["Oven","300°F"],["Bake","About 20 min"],["Makes","cookies",24]],
+ "groups":[{"items":[
+   {"q":0.5,"u":"cup","i":"butter, softened","nus":"1 stick","gpc":227},
+   {"q":1,"u":"cup","i":"light brown sugar","gpc":213},
+   {"q":3,"u":"tbsp","i":"granulated sugar"},
+   {"q":1,"i":"large egg"},
+   {"q":2,"u":"tsp","i":"vanilla extract"},
+   {"q":1.75,"u":"cup","i":"all-purpose flour","gpc":125},
+   {"q":0.5,"u":"tsp","i":"baking powder"},
+   {"q":0.5,"u":"tsp","i":"baking soda"},
+   {"q":0.5,"u":"tsp","i":"salt"},
+   {"q":1.5,"u":"tsp","i":"instant espresso powder"},
+   {"q":1.5,"u":"cup","i":"semisweet chocolate chips","gpc":170}]}],
+ "steps":[
+   {"s":"Preheat the oven to 300°F."},
+   {"s":"Cream the butter and both sugars with an electric mixer on medium speed until fluffy, about 30 seconds."},
+   {"s":"Beat in the egg and vanilla for another 30 seconds."},
+   {"s":"Sift the flour, baking powder, baking soda and salt together, then beat into the butter mixture on low speed for about 15 seconds."},
+   {"s":"Stir in the espresso powder and chocolate chips."},
+   {"s":"Drop 2-tablespoon scoops (a 1-ounce scoop) onto a greased cookie sheet about 3 inches apart. Press each down with the back of a spoon into a 2-inch circle."},
+   {"s":"Bake about 20 minutes, until nicely browned around the edges. Bake a little longer for a crispier cookie.","t":20}],
+ "notes":[]
+},
 ]
 
-# Recipes waiting on missing info (none right now)
-ON_HOLD = []
+# Recipes waiting on missing info.
+# Pizza: Ali is checking whether there's a second "Pizza Crust ②" card. Card photos are in cards/on-hold/
+# (pizza-crust-card1 + back, pizza-card2 + back). Agreed: one "Pizza" recipe; 1 tbsp olive oil total on the crusts.
+ON_HOLD = [
+{
+ "id":"pizza","title":"Pizza","cat":"Mains",
+ "card":"on-hold/pizza-crust-card1.jpg","back":"on-hold/pizza-crust-card1-back.jpg","cook":20,
+ "facts":[["Oven","425°F"],["Bake","20 min"],["Makes","pizzas",2]],
+ "groups":[
+   {"name":"Crust","items":[
+     {"q":1,"u":"envelope","i":"dry yeast"},
+     {"q":1,"u":"cup","i":"warm water"},
+     {"q":4,"u":"cup","i":"flour","n":"¼ cup set aside","gpc":125},
+     {"q":0.5,"u":"tsp","i":"salt"},
+     {"q":0.25,"u":"tsp","i":"pepper"},
+     {"q":2,"u":"tbsp","i":"olive oil"},
+     {"q":1,"u":"tbsp","i":"olive oil","n":"for the crusts, plus more for the pans"}]},
+   {"name":"Sauce","items":[
+     {"q":16,"u":"oz","i":"can tomato sauce"},
+     {"q":0.5,"u":"tsp","i":"salt"},
+     {"q":0.5,"u":"tsp","i":"oregano"},
+     {"q":0.25,"u":"tsp","i":"pepper"},
+     {"q":1,"i":"clove garlic, crushed"}]},
+   {"name":"Toppings","items":[{"i":"toppings","n":"as desired"}]}],
+ "steps":[
+   {"s":"Dissolve the yeast in the warm water."},
+   {"s":"Sift the flour into a bowl. Remove and reserve ¼ cup of it. Add the salt and pepper."},
+   {"s":"Make a well in the center of the bowl. Pour in the dissolved yeast and 2 tbsp olive oil. Work this gradually into the flour and knead into a ball."},
+   {"s":"Sprinkle the top with the reserved ¼ cup flour. Cover and let rise at least 2 hours.","t":120},
+   {"s":"Knead the dough and divide it in half."},
+   {"s":"Oil the pizza pans with olive oil and roll out the dough. Drizzle the 1 tbsp olive oil over the crusts."},
+   {"s":"Stir the sauce ingredients together and spread half on each pizza. Add desired toppings."},
+   {"s":"Bake at 425°F for 20 minutes.","t":20}],
+ "notes":[]
+},
+]
