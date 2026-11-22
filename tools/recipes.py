@@ -399,6 +399,170 @@ RECIPES = [
    {"s":"Bake about 20 minutes, until nicely browned around the edges. Bake a little longer for a crispier cookie.","t":20}],
  "notes":[]
 },
+{
+ "id":"chicken-tortilla-casserole","title":"Chicken Tortilla Casserole","cat":"Mains",
+ "card":"chicken-tortilla-casserole.jpg","cook":30,
+ "facts":[["Oven","350°F"],["Bake","30 min"],["Dish","13×9 casserole"],["Serves","8–10"]],
+ "groups":[{"items":[
+   {"q":12,"i":"corn tortillas","n":"1 dozen"},
+   {"q":1/3,"u":"cup","i":"oil","n":"for softening the tortillas"},
+   {"q":1,"u":"tbsp","i":"instant onion"},
+   {"q":0.5,"u":"cup","i":"milk"},
+   {"q":1,"u":"can","i":"cream of chicken soup","nus":"10.5 oz","ge":298},
+   {"q":1,"u":"can","i":"cream of mushroom soup","nus":"10.5 oz","ge":298},
+   {"q":1,"u":"cup","i":"sour cream","gpc":240},
+   {"q":3,"u":"tbsp","i":"diced green chiles"},
+   {"q":0.5,"u":"tsp","i":"garlic salt"},
+   {"q":2,"u":"cup","i":"canned chicken","gpc":140},
+   {"q":0.5,"u":"lb","i":"Jack cheese, grated"},
+   {"q":1,"u":"can","i":"chopped ripe olives"},
+   {"i":"butter","n":"for greasing the dish"}]}],
+ "steps":[
+   {"s":"Grease a 13×9 casserole dish with butter."},
+   {"s":"Heat the oil in a pan and soften the tortillas in it."},
+   {"s":"Mix the onion, milk, both soups, sour cream, chiles and garlic salt."},
+   {"s":"Layer in the dish: tortillas, chicken, soup mixture, olives, cheese. Repeat the layers."},
+   {"s":"Bake at 350°F for 30 minutes.","t":30}],
+ "notes":[]
+},
+{
+ "id":"pecan-pie","title":"Pecan Pie","cat":"Desserts",
+ "card":"pecan-pie.jpg","back":"pecan-pie-back.jpg","cook":55,
+ "facts":[["Oven","350°F"],["Bake","35–55 min"],["Pie","9-inch"],["Serves","8"]],
+ "groups":[{"items":[
+   {"q":1,"i":"unbaked 9-inch pie shell"},
+   {"q":3,"i":"eggs, slightly beaten"},
+   {"q":1,"u":"cup","i":"white Karo (light corn syrup)","gpc":328},
+   {"q":1,"u":"cup","i":"sugar","gpc":200},
+   {"q":2,"u":"tbsp","i":"butter, melted"},
+   {"q":2,"u":"tsp","i":"vanilla"},
+   {"q":1.25,"u":"cup","i":"pecans","gpc":110}]}],
+ "steps":[
+   {"s":"Mix the eggs, Karo, sugar, butter and vanilla together."},
+   {"s":"Break the pecans into pieces and put them in the pie shell."},
+   {"s":"Pour the egg mixture over the pecans."},
+   {"s":"Bake at 350°F for 35–55 minutes, until a knife inserted in the middle comes out almost clean. Start checking at 35.","t":55},
+   {"s":"Cool."}],
+ "tips":["This was the original Karo recipe!"],
+ "notes":[]
+},
+{
+ "id":"toasted-pumpkin-seeds","title":"Toasted Pumpkin Seeds","cat":"Snacks",
+ "card":"toasted-pumpkin-seeds.jpg","cook":30,
+ "facts":[["Oven","250–300°F"],["Toast","About 30 min"]],
+ "groups":[{"items":[
+   {"q":1,"u":"cup","i":"pumpkin seeds","gpc":130},
+   {"q":1,"u":"tbsp","i":"butter, melted"},
+   {"q":1,"u":"tsp","i":"salt"},
+   {"q":0.125,"u":"tsp","i":"garlic powder","n":"optional"}]}],
+ "steps":[
+   {"s":"Wash the seeds and separate them from the pulp."},
+   {"s":"Spread the seeds thinly on a baking sheet with the butter and salt (and garlic powder, if using)."},
+   {"s":"Toast in a low oven, 250–300°F, for about 30 minutes, stirring occasionally, until crisp and brown.","t":30}],
+ "tips":["The recipe I used when you were kids."],
+ "notes":[]
+},
+{
+ "id":"pignoli-cookies","title":"Pignoli Cookies","cat":"Desserts",
+ "card":"pignoli-cookies.jpg","cook":14,
+ "facts":[["Oven","350°F"],["Bake","12–14 min"],["Makes","5–6 dozen cookies"]],
+ "groups":[{"items":[
+   {"q":1.5,"u":"lb","i":"almond paste"},
+   {"q":3,"u":"cup","i":"sugar","gpc":200},
+   {"q":5,"q2":6,"i":"egg whites, beaten"},
+   {"i":"vanilla","n":"a touch"},
+   {"q":1,"u":"lb","i":"pignoli (pine) nuts"}]}],
+ "steps":[
+   {"s":"Line cookie sheets with parchment."},
+   {"s":"Crumble the almond paste, then add the sugar, egg whites and a touch of vanilla."},
+   {"s":"Blend together, by machine or by hand."},
+   {"s":"Put the pignoli nuts in a bowl, about a quarter of the bag at a time."},
+   {"s":"Wet your hands, roll the dough into small balls and roll each ball in the nuts until covered."},
+   {"s":"Place on the cookie sheet and press down slightly to flatten a little."},
+   {"s":"Bake at 350°F for 12–14 minutes. Watch your oven carefully.","t":14}],
+ "tips":["I prefer the machine for blending."],
+ "notes":[]
+},
+{
+ "id":"lemon-lovelies","title":"Lemon Lovelies","cat":"Desserts",
+ "card":"lemon-bars-sheet.jpg","cook":50,
+ "facts":[["Oven","350°F"],["Bake","25 + 25 min"],["Pan","13×9-inch"]],
+ "groups":[
+   {"name":"Crust","items":[
+     {"q":2,"i":"sticks butter","ge":113},
+     {"i":"salt","n":"a pinch"},
+     {"q":2,"u":"cup","i":"flour","gpc":125},
+     {"q":0.5,"u":"cup","i":"powdered sugar","gpc":120}]},
+   {"name":"Lemon layer","items":[
+     {"q":4,"i":"eggs"},
+     {"q":1,"i":"lemon, juice and grated rind","n":"about ½ cup juice"},
+     {"q":2,"u":"cup","i":"sugar","gpc":200},
+     {"q":4,"u":"tbsp","i":"flour"}]},
+   {"name":"Topping","items":[{"i":"powdered sugar"}]}],
+ "steps":[
+   {"s":"Mix the butter, salt, flour and powdered sugar together and pat into a 13×9-inch pan."},
+   {"s":"Bake at 350°F for 25 minutes.","t":25},
+   {"s":"Meanwhile, mix the eggs, lemon juice and rind, sugar and flour, and beat for at least 1 minute."},
+   {"s":"Pour over the hot crust and bake 25 minutes more at 350°F.","t":25},
+   {"s":"Cool, sprinkle with powdered sugar and cut into squares."}],
+ "notes":[]
+},
+{
+ "id":"triple-layer-lemon-bars","title":"Triple Layer Lemon Bars","cat":"Desserts",
+ "card":"lemon-bars-sheet.jpg","cook":40,
+ "facts":[["Oven","325°F"],["Bake","30 + 30–40 min"],["Pan","8×8-inch"]],
+ "groups":[
+   {"name":"Shortbread crust","items":[
+     {"q":0.5,"u":"cup","i":"butter","nus":"1 stick","gpc":227},
+     {"q":0.25,"u":"cup","i":"powdered sugar","gpc":120},
+     {"q":1,"u":"tsp","i":"vanilla"},
+     {"q":1,"u":"cup","i":"flour","gpc":125}]},
+   {"name":"Cream cheese filling","items":[
+     {"q":8,"u":"oz","i":"cream cheese"},
+     {"q":1.5,"u":"cup","i":"powdered sugar","gpc":120},
+     {"q":1,"i":"egg"},
+     {"q":1,"u":"tsp","i":"lemon extract"}]},
+   {"name":"Lemon curd","items":[
+     {"q":4,"i":"large egg yolks"},
+     {"q":1,"u":"tbsp","i":"cornstarch"},
+     {"q":0.75,"u":"cup","i":"white sugar","gpc":200},
+     {"q":0.75,"u":"cup","i":"water"},
+     {"q":2,"i":"medium lemons","n":"juiced, plus 2 tsp grated peel"},
+     {"q":1,"u":"tbsp","i":"butter"}]},
+   {"name":"Topping","items":[
+     {"q":2,"u":"tbsp","i":"powdered sugar"}]}],
+ "steps":[
+   {"s":"Crust: cream the butter and powdered sugar, add the vanilla and mix, then add the flour and mix until fluffy."},
+   {"s":"Press the dough into the bottom of an 8×8-inch pan and refrigerate 30 minutes.","t":30},
+   {"s":"Prick the bottom and bake at 325°F for 30 minutes. Cool.","t":30},
+   {"s":"Cream cheese filling: beat the cream cheese and powdered sugar, add the egg and lemon extract, and beat until light and smooth. Cover and refrigerate."},
+   {"s":"Lemon curd: blend the egg yolks with the cornstarch and sugar. Over low heat, whisk in the water and lemon juice and cook until the mixture coats the back of a spoon."},
+   {"s":"Remove from the heat, add the lemon peel and butter, and cool for 10 minutes.","t":10},
+   {"s":"Spread the cream cheese filling over the crust, then spread the lemon curd over the cream cheese."},
+   {"s":"Bake in the center of the oven at 325°F for 30–40 minutes.","t":40},
+   {"s":"Cool, then chill in the refrigerator for 1 hour.","t":60},
+   {"s":"Dust with the powdered sugar before serving.","added":True}],
+ "tips":["A Mrs. Fields (supposedly) recipe. I haven't tried it, but it looks super."],
+ "notes":[]
+},
+{
+ "id":"chex-party-mix","title":"Original Chex Party Mix","cat":"Snacks",
+ "card":"chex-party-mix.jpg","cook":6,
+ "facts":[["Microwave","High"],["Cook","5–6 min"],["Makes","cups",10]],
+ "groups":[{"items":[
+   {"q":0.25,"u":"cup","i":"margarine or butter, melted","gpc":227},
+   {"q":4.5,"u":"tsp","i":"Worcestershire sauce"},
+   {"q":1.25,"u":"tsp","i":"seasoned salt"},
+   {"q":8,"u":"cup","i":"Chex cereal","n":"Corn, Rice and/or Wheat","gpc":30},
+   {"q":1,"u":"cup","i":"mixed nuts or peanuts","gpc":140},
+   {"q":1,"u":"cup","i":"pretzels","gpc":45}]}],
+ "steps":[
+   {"s":"Mix the melted butter, Worcestershire sauce and seasoned salt."},
+   {"s":"Put the cereal, nuts and pretzels in a large zipper bag. Pour the butter mixture over them, seal the bag and shake until everything is evenly coated."},
+   {"s":"Tip into a large microwave-safe bowl. Microwave on High for 5–6 minutes, stirring well every 2 minutes and scraping the sides and bottom of the bowl. (These times were written for 625–700 watt microwaves, so start checking sooner in a stronger one.)","t":6},
+   {"s":"Spread on paper towels to cool. Store in an airtight container."}],
+ "notes":[]
+},
 ]
 
 # Recipes waiting on missing info.
