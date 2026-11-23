@@ -974,6 +974,163 @@ RECIPES = [
    {"s":"Bake at 350°F for 10 minutes, or until very light brown.","t":10}],
  "notes":[]
 },
+{
+ "id":"julies-oatmeal-cookies","title":"Julie's Oatmeal Cookies","cat":"Desserts",
+ "card":"julies-oatmeal-cookies.jpg","cook":15,
+ "facts":[["Oven","350°F"],["Bake","12–15 min"],["Makes","dozen",2.5]],
+ "groups":[{"items":[
+   {"q":0.75,"u":"cup","i":"butter or margarine","gpc":227},
+   {"q":1,"u":"cup","i":"brown sugar","gpc":200},
+   {"q":0.25,"u":"cup","i":"white sugar","gpc":200},
+   {"q":1,"i":"egg"},
+   {"q":1,"u":"tsp","i":"vanilla"},
+   {"q":0.25,"u":"cup","i":"water"},
+   {"q":2.5,"u":"cup","i":"oats","gpc":90},
+   {"q":0.75,"u":"cup","i":"flour","n":"plus 1 tablespoon","gpc":125},
+   {"q":2,"u":"tbsp","i":"unprocessed bran (not bran cereal)","n":"optional"},
+   {"q":0.5,"u":"tsp","i":"baking soda"},
+   {"q":1,"u":"tsp","i":"cinnamon"},
+   {"q":0.25,"u":"tsp","i":"ground cloves"},
+   {"q":1,"u":"cup","i":"diced walnuts","gpc":120},
+   {"q":1,"u":"cup","i":"raisins","gpc":150},
+   {"q":0.5,"u":"cup","i":"shredded coconut","n":"optional","gpc":85}]}],
+ "steps":[
+   {"s":"Cream the butter and sugars (an electric mixer works well)."},
+   {"s":"Add the egg, water and vanilla."},
+   {"s":"Combine the flour, bran, baking soda, cinnamon and cloves, and stir into the butter mixture."},
+   {"s":"Add the oats, nuts, raisins and coconut."},
+   {"s":"Bake at 350°F for 12–15 minutes, until light golden brown.","t":15}],
+ "tips":["If you like a soft, chewy cookie, always underbake them a little — they should be light golden brown. If you like a crispy cookie, leave them in until darker in color.","This recipe only makes about 2½ dozen."],
+ "notes":[]
+},
+{
+ "id":"bisquick-strawberry-shortcakes","title":"Strawberry Shortcakes","cat":"Desserts",
+ "fromline":"From Bisquick",
+ "card":"bisquick-strawberry-shortcakes.jpg","cook":12,
+ "facts":[["Oven","425°F"],["Bake","10–12 min"],["Makes","shortcakes",6]],
+ "groups":[{"items":[
+   {"q":4,"u":"cup","i":"sliced strawberries","nus":"1 qt","gpc":166},
+   {"q":0.5,"u":"cup","i":"sugar","gpc":200},
+   {"q":7/3,"u":"cup","i":"Original Bisquick","gpc":120},
+   {"q":0.5,"u":"cup","i":"milk"},
+   {"q":3,"u":"tbsp","i":"sugar"},
+   {"q":3,"u":"tbsp","i":"butter or margarine, melted"},
+   {"q":1,"u":"tub","i":"Cool Whip, thawed","nus":"8 oz","ge":227}]}],
+ "steps":[
+   {"s":"Mix the strawberries with the ½ cup sugar and set aside."},
+   {"s":"Heat the oven to 425°F. Stir the Bisquick, milk, 3 tbsp sugar and melted butter until a soft dough forms."},
+   {"s":"Drop the dough in 6 spoonfuls onto an ungreased cookie sheet."},
+   {"s":"Bake 10–12 minutes, until golden brown.","t":12},
+   {"s":"Split the warm shortcakes; fill and top with the strawberries and Cool Whip."}],
+ "tips":["High altitude: heat the oven to 450°F and use 1 tbsp sugar in the dough."],
+ "notes":[]
+},
+{
+ "id":"pie-crust","title":"Pie Crust","cat":"Desserts",
+ "card":"pie-crust.jpg","back":"pie-crust-back.jpg","cook":0,
+ "facts":[["Makes","10-inch two-crust pie"],["Serves","8–10"]],
+ "groups":[{"items":[
+   {"q":3,"u":"cup","i":"sifted flour","gpc":115},
+   {"q":1.5,"u":"tsp","i":"salt"},
+   {"q":1,"u":"cup","i":"shortening","n":"plus 2 tbsp","gpc":190},
+   {"q":6,"u":"tbsp","i":"ice water"}]}],
+ "steps":[
+   {"s":"Sift the flour and add the salt."},
+   {"s":"Using a pastry blender, mix in the shortening until it is well blended."},
+   {"s":"Add the ice water 1 tbsp at a time, stirring with a fork until blended each time you add water."},
+   {"s":"Gather the dough into one large ball and cut it in half."},
+   {"s":"Roll out on a pastry cloth, using a stockinette on the rolling pin."}],
+ "notes":[]
+},
+{
+ "id":"moms-famous-coffee-cake","title":"Mom's Famous Coffee Cake","cat":"Desserts",
+ "card":"moms-famous-coffee-cake.jpg","back":"moms-famous-coffee-cake-back.jpg","cook":50,
+ "facts":[["Oven","350°F"],["Bake","40–50 min"],["Pan","Bundt"],["Serves","8–10"]],
+ "groups":[
+   {"name":"Cake","items":[
+     {"q":1.5,"u":"stick","i":"butter or margarine","ge":113},
+     {"q":1.25,"u":"cup","i":"sugar","gpc":200},
+     {"q":2,"i":"eggs"},
+     {"q":1,"u":"cup","i":"sour cream","nus":"½ pint","gpc":240},
+     {"q":1,"u":"tsp","i":"vanilla"},
+     {"q":2,"u":"cup","i":"sifted flour","gpc":115},
+     {"q":0.5,"u":"tsp","i":"salt"},
+     {"q":1,"u":"tsp","i":"baking powder"},
+     {"q":0.5,"u":"tsp","i":"baking soda"}]},
+   {"name":"Topping","items":[
+     {"q":0.5,"u":"cup","i":"finely chopped pecans or walnuts","gpc":115},
+     {"q":2,"u":"tbsp","i":"sugar"},
+     {"q":1,"u":"tsp","i":"cinnamon"}]}],
+ "steps":[
+   {"s":"Cream together the butter and sugar."},
+   {"s":"Add the eggs, sour cream and vanilla. Beat well."},
+   {"s":"Add the flour, salt, baking powder and baking soda. Blend with a mixer until smooth."},
+   {"s":"Mix the topping ingredients together."},
+   {"s":"Layer in a greased and floured bundt pan: half the topping, half the batter, the rest of the topping, the rest of the batter."},
+   {"s":"Bake at 350°F for 40–50 minutes.","t":50},
+   {"s":"Cool. Remove from the pan."}],
+ "tips":["Happy Eating!"],
+ "notes":[]
+},
+{
+ "id":"strawberry-meringue-cake","title":"Strawberry Meringue Cake","cat":"Desserts",
+ "card":"strawberry-meringue-cake.jpg","back":"strawberry-meringue-cake-back.jpg","cook":40,
+ "facts":[["Oven","350°F"],["Bake","35–40 min"],["Pans","Two 9×9"]],
+ "groups":[
+   {"name":"Cake","items":[
+     {"q":1,"u":"package","i":"yellow cake mix","n":"no pudding in mix"},
+     {"q":1,"u":"cup","i":"orange juice"},
+     {"q":1/3,"u":"cup","i":"water"},
+     {"q":4,"i":"egg yolks"},
+     {"q":1,"u":"tsp","i":"grated orange peel"}]},
+   {"name":"Meringue","items":[
+     {"q":4,"i":"egg whites"},
+     {"q":0.25,"u":"tsp","i":"cream of tartar"},
+     {"q":1,"u":"cup","i":"sugar","gpc":200}]},
+   {"name":"Filling","items":[
+     {"q":3,"u":"pint","i":"strawberries","n":"3 boxes"},
+     {"q":2,"u":"cup","i":"heavy (whipping) cream","nus":"1 pint"},
+     {"q":0.25,"u":"cup","i":"sugar","gpc":200}]}],
+ "steps":[
+   {"s":"Combine the cake mix, orange juice, water, egg yolks and orange peel. Beat 4 minutes with a mixer."},
+   {"s":"Pour into two greased, waxed-paper-lined 9×9 pans."},
+   {"s":"Beat the egg whites with the cream of tartar to soft peaks. Slowly add the 1 cup sugar, beating to stiff peaks. Gently spread the meringue over the batter."},
+   {"s":"Bake at 350°F for 35–40 minutes. Cool.","t":40},
+   {"s":"Carefully remove the layers from the pans, keeping the meringue side on top."},
+   {"s":"Save a few berries for garnish and slice the rest."},
+   {"s":"Whip the cream with the ¼ cup sugar."},
+   {"s":"Spread ⅔ of the whipped cream over the meringue on the bottom layer. Arrange the sliced berries on the cream."},
+   {"s":"Add the top layer, meringue side up. Garnish with the remaining whipped cream and the whole berries."}],
+ "tips":["Or spread the cream and add the berries on a single layer."],
+ "notes":[]
+},
+{
+ "id":"julies-chocolate-chip-coffee-cake","title":"Julie's Chocolate Chip Coffee Cake","cat":"Desserts",
+ "card":"julies-chocolate-chip-coffee-cake.jpg","back":"julies-chocolate-chip-coffee-cake-back.jpg","cook":60,
+ "facts":[["Oven","350°F"],["Bake","1 hr"],["Pan","Bundt"]],
+ "groups":[
+   {"name":"Cake","items":[
+     {"q":1,"u":"package","i":"Duncan Hines yellow cake mix"},
+     {"q":1,"u":"package","i":"vanilla instant pudding","n":"small"},
+     {"q":4,"i":"eggs"},
+     {"q":1,"u":"carton","i":"sour cream","n":"small"},
+     {"q":0.25,"u":"cup","i":"milk"},
+     {"q":0.5,"u":"cup","i":"Crisco oil"}]},
+   {"name":"Swirl","items":[
+     {"q":0.5,"u":"cup","i":"sugar","gpc":200},
+     {"q":3,"u":"tbsp","i":"Hershey's baking cocoa"},
+     {"q":1,"u":"tbsp","i":"brown sugar"},
+     {"q":0.5,"u":"tsp","i":"cinnamon"},
+     {"q":1,"u":"package","i":"chocolate chips","n":"small"}]}],
+ "steps":[
+   {"s":"In a large mixing bowl combine the cake mix, pudding, eggs, sour cream, milk and oil. Beat with a mixer for 8 minutes.","t":8},
+   {"s":"Mix the sugar, cocoa, brown sugar and cinnamon in a small bowl."},
+   {"s":"Pour half the batter into a greased bundt pan. Sprinkle with a little more than half the sugar mixture, then sprinkle the chocolate chips over it."},
+   {"s":"Add the remaining batter, then the remaining sugar mixture. Cut through with a knife and swirl gently."},
+   {"s":"Bake at 350°F for 1 hour, or until a tester comes out clean.","t":60},
+   {"s":"Cool in the pan for 20 minutes, then turn out onto a platter or cake holder.","t":20}],
+ "notes":[]
+},
 ]
 
 # Recipes waiting on missing info.
@@ -981,8 +1138,7 @@ RECIPES = [
 # (pizza-crust-card1 + back, pizza-card2 + back). Agreed: one "Pizza" recipe; 1 tbsp olive oil total on the crusts.
 # Mystery cake (batch 7): only the back of the card (9x13 cake, 350°F, brown-sugar glaze topping with nuts) —
 # photo in cards/on-hold/mystery-cake-back.jpg. Waiting for the matching front card.
-# Batch 8 holds (photos in cards/on-hold/): Mom's Famous Coffee Cake ("Double" card, cut off after
-# "Mix together, then add to above mixture" — need the back + the stapled typed sheet);
+# Batch 8 holds (photos in cards/on-hold/):
 # Mandarin Orange Cake (Lois Dotson; card says "(over)" — need the back: nuts, pan, temp, time);
 # Marinated Mushrooms (front + back complete, but the back says "over…" — waiting for a possible 3rd side; goes in Appetizers);
 # Oysters Rockefeller Spread (same cookbook page as Layered Seafood Spread; method on the next page; Appetizers).

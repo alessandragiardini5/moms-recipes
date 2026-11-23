@@ -310,7 +310,7 @@ paintFavs();loadFavs();
 
 /* ---------- amounts: scale + units ---------- */
 const FR=[[0,""],[1/8,"⅛"],[1/4,"¼"],[1/3,"⅓"],[3/8,"⅜"],[1/2,"½"],[5/8,"⅝"],[2/3,"⅔"],[3/4,"¾"],[7/8,"⅞"],[1,""]];
-const PL={cup:"cups",can:"cans",cube:"cubes",package:"packages",loaf:"loaves",handful:"handfuls",bunch:"bunches",strip:"strips",jar:"jars",square:"squares",bag:"bags","small bottle":"small bottles",glass:"glasses",pinch:"pinches",slice:"slices",stick:"sticks"};
+const PL={cup:"cups",can:"cans",cube:"cubes",package:"packages",loaf:"loaves",handful:"handfuls",bunch:"bunches",strip:"strips",jar:"jars",square:"squares",bag:"bags","small bottle":"small bottles",pint:"pints",tub:"tubs",carton:"cartons",glass:"glasses",pinch:"pinches",slice:"slices",stick:"sticks"};
 function frac(x){let w=Math.floor(x+1e-9),r=x-w,b=FR[0];for(const f of FR)if(Math.abs(f[0]-r)<Math.abs(b[0]-r))b=f;if(b[0]===1)w++;return ((w?String(w):"")+b[1])||"0"}
 function metricAmt(x,unit){
   if(unit==="g"){const r=x<20?Math.round(x):x<200?Math.round(x/5)*5:Math.round(x/10)*10;return r>=1000?(r/1000).toFixed(1).replace(/\.0$/,"")+" kg":r+" g"}
