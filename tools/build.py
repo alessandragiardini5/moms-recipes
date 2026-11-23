@@ -19,7 +19,7 @@ FRACS = [(0, ""), (1/8, "⅛"), (1/4, "¼"), (1/3, "⅓"), (3/8, "⅜"), (1/2, "
          (5/8, "⅝"), (2/3, "⅔"), (3/4, "¾"), (7/8, "⅞"), (1, "")]
 PLURAL = {"cup": "cups", "can": "cans", "cube": "cubes", "package": "packages",
           "loaf": "loaves", "handful": "handfuls", "bunch": "bunches", "strip": "strips", "jar": "jars",
-          "square": "squares", "bag": "bags", "small bottle": "small bottles"}
+          "square": "squares", "bag": "bags", "small bottle": "small bottles", "stalk": "stalks"}
 
 def frac(x):
     w = int(x); r = x - w

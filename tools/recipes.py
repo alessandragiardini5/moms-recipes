@@ -1131,6 +1131,185 @@ RECIPES = [
    {"s":"Cool in the pan for 20 minutes, then turn out onto a platter or cake holder.","t":20}],
  "notes":[]
 },
+{
+ "id":"pumpkin-bread","title":"Pumpkin Bread","cat":"Breads & Sides",
+ "card":"pumpkin-bread.jpg","back":"pumpkin-bread-back.jpg","cook":60,
+ "facts":[["Oven","350°F"],["Bake","45–60 min"],["Makes","2 large loaves or 3 coffee-can loaves"]],
+ "groups":[
+   {"name":"Combine","items":[
+     {"q":1,"u":"cup","i":"vegetable oil"},
+     {"q":4,"i":"eggs, beaten"},
+     {"q":2/3,"u":"cup","i":"water"},
+     {"q":2,"u":"cup","i":"pumpkin","nus":"1 small can","gpc":245}]},
+   {"name":"Sift together","items":[
+     {"q":10/3,"u":"cup","i":"flour","gpc":125},
+     {"q":2,"u":"tsp","i":"baking soda"},
+     {"q":1.5,"u":"tsp","i":"salt"},
+     {"q":1,"u":"tsp","i":"cinnamon"},
+     {"q":1,"u":"tsp","i":"nutmeg"},
+     {"q":3,"u":"cup","i":"sugar","gpc":200}]},
+   {"name":"Stir in","items":[
+     {"q":0.75,"u":"cup","i":"currants","gpc":145},
+     {"q":0.5,"u":"cup","i":"chopped pecans","gpc":115}]}],
+ "steps":[
+   {"s":"Combine the oil, eggs, water and pumpkin."},
+   {"s":"Sift together the flour, baking soda, salt, cinnamon, nutmeg and sugar."},
+   {"s":"Make a well in the center of the dry ingredients and add the pumpkin mixture. Blend well with a mixer."},
+   {"s":"Stir in the currants and chopped pecans."},
+   {"s":"Grease and flour the pans (2 large loaf pans or 3 one-pound coffee cans)."},
+   {"s":"Bake at 350°F for 45–60 minutes.","t":60}],
+ "notes":[]
+},
+{
+ "id":"mitten-sugar-cookies","title":"Donna Monaco Olsen's \"Mitten\" Sugar Cookies","cat":"Desserts",
+ "card":"mitten-sugar-cookies.jpg","cook":10,
+ "facts":[["Oven","350°F"],["Bake","8–10 min"],["Chill","at least 2 hours"],["Makes","24–30 cookies"]],
+ "groups":[{"items":[
+   {"q":0.5,"u":"cup","i":"butter","gpc":227},
+   {"q":1,"u":"cup","i":"sugar","gpc":200},
+   {"q":1,"i":"egg"},
+   {"q":1.75,"u":"cup","i":"flour","gpc":125},
+   {"q":1,"u":"tsp","i":"baking powder"},
+   {"q":1,"u":"tbsp","i":"milk"},
+   {"q":0.5,"u":"tsp","i":"vanilla extract"},
+   {"q":0.25,"u":"tsp","i":"salt"}]}],
+ "steps":[
+   {"s":"Cream the butter and sugar, then mix in the egg."},
+   {"s":"Add all the other ingredients and mix until smooth. Do not overmix."},
+   {"s":"Refrigerate the dough at least 2 hours. (It's okay to freeze it and then thaw it in the refrigerator.)","t":120},
+   {"s":"Heat the oven to 350°F. Roll out the dough and cut with cookie cutters."},
+   {"s":"Bake 8–10 minutes, or until lightly browned on the edges.","t":10},
+   {"s":"Cool on a rack."}],
+ "tips":["Fill with jam and sandwich together, or put sprinkles or sugar on top.","Makes 24–30 cookies depending on the size of the cutters.","Cookies freeze well. Enjoy!"],
+ "notes":[]
+},
+{
+ "id":"lemon-kiss-cookies","title":"Lemon Kiss Cookies","cat":"Desserts",
+ "card":"lemon-kiss-cookies.jpg","cook":12,
+ "facts":[["Oven","375°F"],["Bake","8–12 min"],["Chill","1 hour"]],
+ "groups":[
+   {"name":"Cookies","items":[
+     {"q":1.5,"u":"cup","i":"butter or oleo, softened","gpc":227},
+     {"q":0.75,"u":"cup","i":"sugar","gpc":200},
+     {"q":1,"u":"tbsp","i":"lemon extract"},
+     {"q":2.75,"u":"cup","i":"flour","gpc":125},
+     {"q":1.5,"u":"cup","i":"finely chopped almonds","gpc":115},
+     {"q":1,"u":"bag","i":"Hershey's Kisses","nus":"14 oz","ge":397}]},
+   {"name":"Topping","items":[
+     {"i":"powdered sugar"},
+     {"q":0.5,"u":"cup","i":"semi-sweet chocolate chips","gpc":170},
+     {"q":1,"u":"tbsp","i":"shortening"}]}],
+ "steps":[
+   {"s":"Beat the butter, sugar and lemon extract until fluffy."},
+   {"s":"Add the flour and almonds and beat until blended. Cover and refrigerate for 1 hour.","t":60},
+   {"s":"Shape 1 tablespoon of dough around each Kiss, covering it completely, and form into a ball."},
+   {"s":"Bake at 375°F on an ungreased cookie sheet for 8–12 minutes.","t":12},
+   {"s":"Cool completely, then sprinkle powdered sugar over the tops."},
+   {"s":"Melt the chocolate chips and shortening in the microwave. Watch closely: if it goes too long it will scorch."},
+   {"s":"Drizzle over the tops and let the chocolate harden."}],
+ "notes":[]
+},
+{
+ "id":"tawny-pumpkin-pie","title":"Tawny Pumpkin Pie","cat":"Desserts",
+ "card":"tawny-pumpkin-pie.jpg","back":"tawny-pumpkin-pie-back.jpg","cook":45,
+ "facts":[["Oven","425°F, then 350°F"],["Bake","15 min + 30 min"],["Pie","9-inch"]],
+ "groups":[{"items":[
+   {"q":1,"i":"unbaked 9-inch pie shell"},
+   {"q":1,"u":"can","i":"canned pumpkin (Libby's)","nus":"15 oz","ge":425},
+   {"q":0.75,"u":"cup","i":"sugar","gpc":200},
+   {"q":0.5,"u":"tsp","i":"salt"},
+   {"q":0.25,"u":"tsp","i":"ginger"},
+   {"q":1,"u":"tsp","i":"cinnamon"},
+   {"q":2,"i":"eggs, slightly beaten"},
+   {"q":1,"u":"cup","i":"evaporated milk","n":"\"canned milk\""},
+   {"q":0.5,"u":"tsp","i":"vanilla"}]}],
+ "steps":[
+   {"s":"Combine the pumpkin, sugar, salt and spices in a mixing bowl."},
+   {"s":"Add the eggs and mix well."},
+   {"s":"Add the milk and vanilla. Mix."},
+   {"s":"Pour into the pie shell."},
+   {"s":"Bake at 425°F for 15 minutes.","t":15},
+   {"s":"Lower the oven to 350°F and bake 30 minutes more, until a knife inserted in the center comes out clean.","t":30}],
+ "notes":[]
+},
+{
+ "id":"pumpkin-pecan-pie","title":"Pumpkin Pecan Pie","cat":"Desserts",
+ "card":"pumpkin-pecan-pie.jpg","back":"pumpkin-pecan-pie-back.jpg","cook":50,
+ "facts":[["Oven","400°F, then broil"],["Pie","9-inch"],["Serves","",8]],
+ "groups":[
+   {"name":"Pie","items":[
+     {"q":1,"i":"uncooked 9-inch pie shell"},
+     {"q":2,"i":"eggs, slightly beaten"},
+     {"q":2,"u":"cup","i":"pumpkin","nus":"1 lb, 1 small can","gpc":245},
+     {"q":0.75,"u":"cup","i":"sugar","gpc":200},
+     {"q":0.5,"u":"tsp","i":"salt"},
+     {"q":1,"u":"tsp","i":"cinnamon"},
+     {"q":0.5,"u":"tsp","i":"ginger"},
+     {"q":0.25,"u":"tsp","i":"cloves"},
+     {"q":1,"u":"can","i":"evaporated milk","nus":"12 oz","ge":354}]},
+   {"name":"Caramelized topping","items":[
+     {"q":3,"u":"tbsp","i":"soft butter"},
+     {"q":1/3,"u":"cup","i":"brown sugar","gpc":200},
+     {"q":1/3,"u":"cup","i":"coarsely chopped pecans","gpc":115}]}],
+ "steps":[
+   {"s":"Blend the eggs and pumpkin. Stir in the sugar, salt, cinnamon, ginger and cloves. Blend in the milk."},
+   {"s":"Pour into the pie shell."},
+   {"s":"Bake at 400°F for about 40–50 minutes, until a knife inserted halfway between the edge and the center comes out clean.","t":50,"added":True},
+   {"s":"Cool completely."},
+   {"s":"Topping: using a pastry blender, mix the soft butter, brown sugar and pecans."},
+   {"s":"Crumble teaspoonfuls of the brown sugar mix over the pie with your fingers (this breaks up the clumps)."},
+   {"s":"Broil 5 inches below the heat until bubbly, about 1 minute. Watch closely.","t":1}],
+ "tips":["Yummy!"],
+ "notes":["The card doesn't give a baking time. About 40–50 minutes at 400°F seems likely. Ask Mom to confirm."]
+},
+{
+ "id":"holiday-turkey","title":"Traditional Holiday Turkey","cat":"Mains",
+ "fromline":"From Reynolds",
+ "card":"reynolds-oven-bag-recipes.jpg","back":"reynolds-oven-bag-chart.jpg","cook":180,
+ "facts":[["Oven","350°F"],["Bake","1½–3 hours, by weight"],["Done","180°F in the thigh"],["Allow","½ lb per person"]],
+ "groups":[{"items":[
+   {"q":1,"i":"Reynolds Oven Bag, turkey size"},
+   {"q":1,"u":"tbsp","i":"flour"},
+   {"q":2,"u":"stalk","i":"celery, sliced"},
+   {"q":1,"i":"medium onion, sliced"},
+   {"q":10,"q2":24,"u":"lb","i":"turkey, completely thawed"},
+   {"i":"vegetable oil"}]}],
+ "steps":[
+   {"s":"Heat the oven to 350°F."},
+   {"s":"Shake the flour in the oven bag and place it in a roasting pan at least 2 inches deep. Spray the inside of the bag with nonstick spray to reduce sticking, if desired."},
+   {"s":"Add the vegetables to the bag."},
+   {"s":"Remove the neck and giblets from the turkey. Rinse and pat dry. Lightly stuff with your favorite stuffing, if desired. Brush the turkey with oil."},
+   {"s":"Place the turkey in the bag on top of the vegetables. Close the bag with the nylon tie and cut six ½-inch slits in the top."},
+   {"s":"Insert a meat thermometer through the bag into the thickest part of the inner thigh, not touching the bone. Tuck the ends of the bag into the pan."},
+   {"s":"Bake until the thermometer reads 180°F: 1½–2 hours for 10–12 lb, 2–2¼ hours for 12–16 lb, 2¼–2½ hours for 16–20 lb, 2½–3 hours for 20–24 lb. Add ½ hour for a stuffed turkey.","t":180},
+   {"s":"For easy slicing, let it stand in the bag for 15 minutes. If the turkey sticks to the bag, gently loosen the bag before cutting open the top.","t":15}],
+ "tips":["Herb roasted version: instead of plain oil, brush with 2 tbsp vegetable oil or melted butter, then rub with 1 tbsp dried sage, 1 tsp each dried thyme, basil, rosemary, paprika and seasoned salt, and ½ tsp pepper. Spray the bag with nonstick spray if desired (helps with large turkeys).",
+          "Two turkey breasts at once: two bone-in breasts (4–8 lb each) with 2 onions cut in eighths and 4 sliced celery stalks, brushed with oil and sprinkled with seasoned salt and pepper. Bake at 350°F for 1½–2 hours, until 170°F; let stand 10 minutes.",
+          "Oven-bag chart (on the back): whole stuffed turkey 180°F (stuffing 165°F); bone-in turkey breast 1¾–2¼ hr and boneless 2½–3 hr for 8–12 lb, both to 170°F.",
+          "Never set the oven above 400°F with an oven bag, and don't let the bag touch the oven walls or heating elements."],
+ "notes":[]
+},
+{
+ "id":"holiday-ham","title":"Traditional Holiday Ham","cat":"Mains",
+ "fromline":"From Reynolds",
+ "card":"reynolds-oven-bag-recipes.jpg","back":"reynolds-oven-bag-chart.jpg","cook":195,
+ "facts":[["Oven","325°F"],["Bake","2½–3¼ hours"],["Done","140°F"],["Allow","½ lb per person"]],
+ "groups":[{"items":[
+   {"q":1,"i":"Reynolds Oven Bag, turkey size"},
+   {"q":1,"u":"tbsp","i":"flour"},
+   {"q":12,"q2":16,"u":"lb","i":"fully cooked whole ham, bone-in"},
+   {"i":"whole cloves"}]}],
+ "steps":[
+   {"s":"Heat the oven to 325°F."},
+   {"s":"Shake the flour in the oven bag and place it in a roasting pan at least 2 inches deep."},
+   {"s":"Trim the skin and fat from the ham, leaving a thin layer of fat. Lightly score the surface in a diamond pattern and insert the cloves."},
+   {"s":"Place the ham in the bag. Close with the nylon tie and cut six ½-inch slits in the top."},
+   {"s":"Insert a meat thermometer through the bag into the thickest part of the ham, not touching the bone. Tuck the ends of the bag into the pan."},
+   {"s":"Bake 2½–3¼ hours, until the thermometer reads 140°F.","t":195},
+   {"s":"Let it stand in the bag for 15 minutes before slicing.","t":15}],
+ "tips":["Oven-bag chart (on the back): half bone-in ham (8–10 lb) 2–2½ hr; boneless half ham (10–12 lb) 2¼–2¾ hr with ½ cup water; spiral-sliced ham (8–10 lb) 1½–1¾ hr, cut side down — all to 140°F."],
+ "notes":[]
+},
 ]
 
 # Recipes waiting on missing info.
