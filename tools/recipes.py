@@ -767,6 +767,213 @@ RECIPES = [
  "tips":["For savory crêpes: same ingredients, but without the sugar."],
  "notes":[]
 },
+{
+ "id":"roll-out-cookies","title":"Roll-Out Cookies","cat":"Desserts",
+ "card":"roll-out-cookies.jpg","cook":7,
+ "facts":[["Oven","400°F"],["Bake","6–7 min"],["Makes","20–24 cookies"]],
+ "groups":[{"items":[
+   {"q":1,"u":"cup","i":"butter","nus":"2 sticks","gpc":227},
+   {"q":1,"u":"cup","i":"sugar","gpc":200},
+   {"q":1,"i":"large egg"},
+   {"q":1,"u":"tsp","i":"vanilla"},
+   {"q":2,"u":"tsp","i":"baking powder"},
+   {"q":3,"u":"cup","i":"flour","gpc":125}]}],
+ "steps":[
+   {"s":"Preheat the oven to 400°F."},
+   {"s":"In a large bowl, cream the butter and sugar with an electric mixer. Beat in the egg and vanilla."},
+   {"s":"Mix the baking powder into the flour. Add it one cup at a time, mixing after each addition."},
+   {"s":"The dough will be very stiff, so blend in the last of the flour by hand. If it gets too stiff, add water a teaspoon at a time. Don't chill the dough."},
+   {"s":"Divide the dough into 2 balls. On a floured surface, roll each one into a circle about 12 inches across and ⅛ inch thick."},
+   {"s":"Dip the cutters in flour before each cut. Place the cookies on an ungreased cookie sheet."},
+   {"s":"Bake on the top rack for 6–7 minutes, until lightly browned.","t":7}],
+ "tips":["Colored cookies: tint the dough with icing color, adding a little at a time until you get the color you want.",
+         "Chocolate cookies: stir 3 oz melted unsweetened chocolate into the dough."],
+ "notes":[]
+},
+{
+ "id":"piecrust-shortcakes","title":"Piecrust Shortcakes","cat":"Desserts",
+ "card":"piecrust-shortcakes.jpg","cook":12,
+ "facts":[["Oven","350°F"],["Bake","10–12 min"],["Makes","9 rounds per piecrust"]],
+ "groups":[
+   {"name":"Pastry rounds","items":[
+     {"i":"refrigerated piecrusts","n":"the rolled kind, like Pillsbury"},
+     {"i":"egg, lightly beaten"},
+     {"i":"white sparkling sugar or granulated sugar"}]},
+   {"name":"Filling","items":[
+     {"i":"fresh fruit, sliced","n":"e.g. nectarines and strawberries"},
+     {"i":"berries","n":"e.g. blueberries and raspberries"},
+     {"i":"granulated sugar"},
+     {"i":"whipped cream"},
+     {"i":"fresh mint","n":"for garnish, optional"}]}],
+ "steps":[
+   {"s":"Unroll the piecrust on a lightly floured surface and cut out circles with a 3-inch round cutter (about 9 per crust, a few more if you reroll the scraps)."},
+   {"s":"Brush the top of each circle with beaten egg and sprinkle with sugar. Arrange on ungreased baking sheets."},
+   {"s":"Bake at 350°F for 10–12 minutes, until golden brown.","t":12},
+   {"s":"Cool completely on wire racks."},
+   {"s":"Toss the fruit and berries with a little sugar. Layer the pastry rounds with the fruit and a generous spoonful of whipped cream."}],
+ "tips":["Almost any mix of seasonal fruit works."],
+ "notes":[]
+},
+{
+ "id":"lemon-ricotta-cookies","title":"Lemon Ricotta Cookies","cat":"Desserts",
+ "card":"lemon-ricotta-cookies.jpg","back":"lemon-ricotta-cookies-back.jpg","cook":15,
+ "facts":[["Oven","350°F"],["Bake","12–15 min"],["Makes","about 4 dozen"]],
+ "groups":[
+   {"name":"Cookies","items":[
+     {"q":1,"u":"cup","i":"unsalted butter, softened","nus":"2 sticks","gpc":227},
+     {"q":2,"u":"cup","i":"granulated sugar","gpc":200},
+     {"q":2,"i":"large eggs"},
+     {"q":15,"u":"oz","i":"whole milk ricotta cheese"},
+     {"q":0.5,"u":"tsp","i":"lemon extract","n":"or 1 tsp lemon and/or tangerine baking oil"},
+     {"q":3,"u":"tbsp","i":"Meyer lemon zest, freshly grated"},
+     {"q":1,"u":"tbsp","i":"Meyer lemon juice"},
+     {"q":2.5,"u":"cup","i":"all-purpose flour","gpc":125},
+     {"q":1,"u":"tsp","i":"baking powder"},
+     {"q":1,"u":"tsp","i":"salt"}]},
+   {"name":"Glaze","items":[
+     {"q":6,"u":"tbsp","i":"unsalted butter","nus":"¾ stick"},
+     {"q":3,"u":"cup","i":"confectioners' sugar","gpc":120},
+     {"q":3,"q2":4,"u":"tbsp","i":"Meyer lemon juice"},
+     {"i":"decorating sugar or silver dragées","n":"optional"}]}],
+ "steps":[
+   {"s":"Preheat the oven to 350°F and line baking sheets with parchment paper."},
+   {"s":"Cream the butter and sugar until light and fluffy. Add the eggs, ricotta, lemon extract (or baking oil), zest and juice, and blend well."},
+   {"s":"Add 1 cup of the flour with the baking powder and salt and blend. Add the rest of the flour in two parts, blending in between, until a dough forms."},
+   {"s":"Drop rounded tablespoons of dough 2 inches apart onto the baking sheets."},
+   {"s":"Bake 12–15 minutes, until the edges are very lightly golden.","t":15},
+   {"s":"Let the cookies rest on the sheet for a few minutes, then move them to a wire rack."},
+   {"s":"While they cool, make the glaze: cream the butter and confectioners' sugar, then keep mixing while you add the lemon juice a little at a time until it's the consistency you want."},
+   {"s":"Glaze the cooled cookies and add dragées or decorating sugar, if you like, before the icing sets."}],
+ "tips":["Meyer lemons are in specialty stores from mid-November to early spring. You'll need 2–3 medium lemons. Regular lemons work too."],
+ "notes":[]
+},
+{
+ "id":"moms-chili","title":"Mom's Chili","cat":"Mains",
+ "card":"moms-chili.jpg","cook":30,
+ "facts":[["Soak","Beans overnight"],["Simmer","30 min"],["Serves","A big pot"]],
+ "groups":[{"items":[
+   {"q":1,"u":"lb","i":"pink beans"},
+   {"q":1,"u":"tbsp","i":"salt","n":"for the bean water, plus more to taste"},
+   {"q":2,"q2":3,"u":"strip","i":"bacon","n":"or salt pork, for the beans"},
+   {"q":1,"i":"onion, quartered"},
+   {"q":2,"u":"lb","i":"ground beef"},
+   {"i":"bacon drippings"},
+   {"q":3,"i":"cloves garlic, minced"},
+   {"q":2,"u":"tsp","i":"ground cumin","n":"optional"},
+   {"q":1,"u":"tsp","i":"oregano"},
+   {"q":1,"u":"can","i":"diced green chiles","n":"small can"},
+   {"q":2,"u":"tbsp","i":"chili powder"},
+   {"q":1,"u":"tbsp","i":"chili con carne seasoning"},
+   {"q":1.5,"u":"tbsp","i":"flour"},
+   {"q":1,"u":"can","i":"tomato sauce","n":"small can"},
+   {"q":1,"u":"can","i":"peeled tomatoes","n":"large can; may not need the juice"},
+   {"q":1,"u":"tbsp","i":"vinegar"}]}],
+ "steps":[
+   {"s":"Soak the beans overnight."},
+   {"s":"Cook the beans in 1 quart of salted water with the bacon (or salt pork) and the onion until tender. Add water if they start to dry out, and keep adding salt to taste."},
+   {"s":"Meanwhile, brown the meat in bacon drippings. Drain the grease as needed, leaving some to keep the meat moist."},
+   {"s":"Add the garlic, cumin, oregano, green chiles, chili powder and chili con carne seasoning. Mix well."},
+   {"s":"Remove from the heat. Add the tomatoes, tomato sauce, flour and vinegar, mixing well."},
+   {"s":"Pour the mixture into the drained beans and simmer for 30 minutes.","t":30},
+   {"s":"Serve topped with chopped onions, with crackers on the side."}],
+ "notes":[]
+},
+{
+ "id":"layered-seafood-spread","title":"Layered Seafood Spread","cat":"Appetizers",
+ "card":"layered-seafood-spread.jpg","cook":5,
+ "facts":[["Chill","At least 30 min, then until cold"],["Serves","appetizer servings",25]],
+ "groups":[{"items":[
+   {"q":2.5,"u":"cup","i":"water"},
+   {"q":0.75,"u":"lb","i":"unpeeled medium-size fresh shrimp"},
+   {"q":1,"u":"package","i":"cream cheese, softened","nus":"8 oz","ge":227},
+   {"q":0.25,"u":"cup","i":"lemon juice"},
+   {"q":1,"u":"tbsp","i":"mayonnaise"},
+   {"q":0.5,"u":"tsp","i":"seasoned salt"},
+   {"q":0.5,"u":"tsp","i":"lemon-pepper seasoning"},
+   {"q":0.25,"u":"tsp","i":"Worcestershire sauce"},
+   {"q":1,"u":"jar","i":"cocktail sauce","nus":"12 oz","ge":340},
+   {"q":2,"u":"cup","i":"shredded Monterey Jack cheese","nus":"8 oz","gpc":113},
+   {"q":3,"i":"green onions, chopped"},
+   {"q":0.5,"u":"cup","i":"chopped green pepper","gpc":75},
+   {"q":0.5,"u":"cup","i":"sliced ripe olives","gpc":70},
+   {"i":"assorted crackers","n":"for serving"}]}],
+ "steps":[
+   {"s":"Bring the water to a boil, add the shrimp and cook 3–5 minutes.","t":5},
+   {"s":"Drain, rinse with cold water and chill. Peel and devein. Chop half the shrimp and chill both the chopped and whole shrimp."},
+   {"s":"Beat the cream cheese with an electric mixer on medium until light and fluffy. Add the lemon juice, mayonnaise, seasoned salt, lemon-pepper seasoning and Worcestershire, and beat until smooth."},
+   {"s":"Spread into a 10-inch circle on a large serving platter. Cover and chill at least 30 minutes.","t":30},
+   {"s":"Spread the cocktail sauce evenly over the cream cheese. Layer the chopped shrimp, Monterey Jack, green onions, green pepper and olives on top, then finish with the whole shrimp."},
+   {"s":"Cover and chill thoroughly. Serve with assorted crackers."}],
+ "notes":[]
+},
+{
+ "id":"macaroni-salad","title":"Macaroni Salad","cat":"Salads",
+ "card":"macaroni-salad.jpg","back":"macaroni-salad-back.jpg","cook":0,
+ "facts":[["Chill","Overnight"]],
+ "groups":[
+   {"name":"Salad","items":[
+     {"q":1,"u":"lb","i":"salad macaroni"},
+     {"q":12,"i":"large green onion (chive) stems, chopped"},
+     {"q":4,"i":"hard-boiled eggs, chopped"},
+     {"q":1,"u":"cup","i":"chopped celery","gpc":100},
+     {"q":12,"u":"slice","i":"crisp bacon, crumbled"},
+     {"q":1,"u":"jar","i":"pimentos","nus":"4 oz","ge":113},
+     {"q":1,"u":"cup","i":"chopped sweet pickles","gpc":150}]},
+   {"name":"Dressing","items":[
+     {"q":1.5,"u":"cup","i":"mayonnaise","gpc":220},
+     {"q":1,"u":"tbsp","i":"horseradish"},
+     {"q":2,"u":"tsp","i":"mustard"},
+     {"q":1,"u":"tbsp","i":"pickle juice"},
+     {"i":"salt and pepper"}]}],
+ "steps":[
+   {"s":"Cook the macaroni according to the package, drain, rinse with cold water and let it cool."},
+   {"s":"Mix the mayonnaise, horseradish, mustard and pickle juice, and season with salt and pepper."},
+   {"s":"Combine the macaroni with the green onions, eggs, celery, bacon, pimentos and pickles. Stir in the dressing."},
+   {"s":"Chill overnight."}],
+ "notes":[]
+},
+{
+ "id":"caramel-apples","title":"Caramel Apples","cat":"Desserts",
+ "card":"caramel-apples.jpg","cook":0,
+ "facts":[["Microwave","About 3 min"],["Chill","45 min"],["Serves","6–8"]],
+ "groups":[{"items":[
+   {"q":48,"i":"caramels","n":"one 14-oz package"},
+   {"q":2,"u":"tbsp","i":"water"},
+   {"q":6,"q2":8,"i":"apples, washed, dried and stems removed"},
+   {"q":6,"q2":8,"i":"wooden craft sticks"}]}],
+ "steps":[
+   {"s":"Put the caramels and water in a large microwave-safe bowl. Microwave on High for 2 minutes, then stir.","t":2},
+   {"s":"Keep microwaving on High in 20–30 second bursts, stirring, until smooth."},
+   {"s":"Push a craft stick into the stem end of each apple. Dip in the melted caramel and scrape the excess off the bottom."},
+   {"s":"Set the apples on a greased, waxed-paper-lined tray. Chill 45 minutes, or until set.","t":45}],
+ "tips":["If the caramel gets firm, microwave it again for 20–30 seconds until it's dippable.",
+         "Decorating ideas: roll warm apples in chopped pecans and drizzle with melted chocolate.",
+         "Press nonpareil-covered chocolate chips onto warm apples and drizzle with melted white chocolate.",
+         "Roll warm apples in chopped multicolored chocolate candies.",
+         "Roll warm apples in graham cracker pieces and mini marshmallows, then drizzle with melted chocolate.",
+         "Drizzle cooled apples with melted white and dark chocolate.",
+         "Wrap chewy fruit strips around the apple like a big bow.",
+         "Make a baseball: cover a cooled apple in melted white chocolate and pipe on the stitches with dark chocolate."],
+ "notes":[]
+},
+{
+ "id":"spritzkransar","title":"Spritzkransar","sub":"Swedish Sugar Cookies","cat":"Desserts",
+ "card":"spritzkransar.jpg","cook":10,
+ "facts":[["Oven","350°F"],["Bake","10 min"],["Tool","Cookie press"]],
+ "groups":[{"items":[
+   {"q":0.5,"u":"lb","i":"butter or margarine, softened"},
+   {"q":1,"u":"cup","i":"sugar","gpc":200},
+   {"q":1,"i":"egg"},
+   {"q":2.5,"u":"cup","i":"presifted flour","gpc":125},
+   {"q":1,"u":"tsp","i":"baking powder"},
+   {"q":0.5,"u":"tsp","i":"almond flavoring"}]}],
+ "steps":[
+   {"s":"Cream the butter and sugar together. Add the egg and almond flavoring."},
+   {"s":"Mix the baking powder into the flour, then gradually add it to make a soft cookie dough."},
+   {"s":"Press through a cookie press."},
+   {"s":"Bake at 350°F for 10 minutes, or until very light brown.","t":10}],
+ "notes":[]
+},
 ]
 
 # Recipes waiting on missing info.
@@ -774,6 +981,11 @@ RECIPES = [
 # (pizza-crust-card1 + back, pizza-card2 + back). Agreed: one "Pizza" recipe; 1 tbsp olive oil total on the crusts.
 # Mystery cake (batch 7): only the back of the card (9x13 cake, 350°F, brown-sugar glaze topping with nuts) —
 # photo in cards/on-hold/mystery-cake-back.jpg. Waiting for the matching front card.
+# Batch 8 holds (photos in cards/on-hold/): Mom's Famous Coffee Cake ("Double" card, cut off after
+# "Mix together, then add to above mixture" — need the back + the stapled typed sheet);
+# Mandarin Orange Cake (Lois Dotson; card says "(over)" — need the back: nuts, pan, temp, time);
+# Marinated Mushrooms (front + back complete, but the back says "over…" — waiting for a possible 3rd side; goes in Appetizers);
+# Oysters Rockefeller Spread (same cookbook page as Layered Seafood Spread; method on the next page; Appetizers).
 ON_HOLD = [
 {
  "id":"pizza","title":"Pizza","cat":"Mains",
