@@ -126,7 +126,7 @@ def recipe_page(r):
 <section class="rhead">
   <div>
     <div class="kicker">{E(r['cat'])}</div>
-    <div class="titlerow"><h1>{E(r['title'])}</h1>{fav_btn(r['id'], ' big')}</div>
+    <div class="titlerow"><h1>{E(r['title'])}</h1>{fav_btn(r['id'], ' big')}</div>{f'<div class="subtitle">{E(r["sub"])}</div>' if r.get('sub') else ''}
     <div class="from">{E(from_line(r))}</div>
     <div class="facts">{''.join(fact_html(f) for f in r['facts'])}</div>
     <div class="controls">
@@ -169,11 +169,12 @@ def from_line(r):
 
 
 def tile(r):
-    words = " ".join([r["title"], r.get("from", "Mom")] + [i["i"] for g in r["groups"] for i in g["items"]]).lower()
+    words = " ".join([r["title"], r.get("sub", ""), r.get("from", "Mom")] + [i["i"] for g in r["groups"] for i in g["items"]]).lower()
     return (f'<a class="tile" href="recipes/{r["id"]}.html" data-id="{r["id"]}" data-cat="{E(r["cat"])}" data-words="{E(words)}">'
             f'{fav_btn(r["id"])}'
             f'<div class="ph" style="background-image:url(\'cards/{r["card"]}\')"></div>'
             f'<div class="bd"><div class="cat">{E(r["cat"])}</div><h3>{E(r["title"])}</h3>'
+            f'{"<div class=subtitle>" + E(r["sub"]) + "</div>" if r.get("sub") else ""}'
             f'<div class="meta">{E(from_line(r))}</div>{flag(r)}</div></a>')
 
 def index_page():
@@ -197,6 +198,8 @@ def index_page():
     return page("Mom's Recipe Box", body, "")
 
 EXTRA_CSS = """
+.rhead .subtitle{font-family:var(--serif);font-style:italic;font-size:1.25rem;opacity:.75;margin:-6px 0 8px}
+.tile .subtitle{font-family:var(--serif);font-style:italic;font-size:.95rem;opacity:.75;margin:-2px 0 4px}
 .kicker{color:var(--red);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
 .tile[hidden]{display:none}
 /* favorites */
@@ -307,7 +310,7 @@ paintFavs();loadFavs();
 
 /* ---------- amounts: scale + units ---------- */
 const FR=[[0,""],[1/8,"⅛"],[1/4,"¼"],[1/3,"⅓"],[3/8,"⅜"],[1/2,"½"],[5/8,"⅝"],[2/3,"⅔"],[3/4,"¾"],[7/8,"⅞"],[1,""]];
-const PL={cup:"cups",can:"cans",cube:"cubes",package:"packages",loaf:"loaves",handful:"handfuls",bunch:"bunches",strip:"strips",square:"squares",bag:"bags","small bottle":"small bottles"};
+const PL={cup:"cups",can:"cans",cube:"cubes",package:"packages",loaf:"loaves",handful:"handfuls",bunch:"bunches",strip:"strips",square:"squares",bag:"bags","small bottle":"small bottles",glass:"glasses",pinch:"pinches",slice:"slices",stick:"sticks"};
 function frac(x){let w=Math.floor(x+1e-9),r=x-w,b=FR[0];for(const f of FR)if(Math.abs(f[0]-r)<Math.abs(b[0]-r))b=f;if(b[0]===1)w++;return ((w?String(w):"")+b[1])||"0"}
 function metricAmt(x,unit){
   if(unit==="g"){const r=x<20?Math.round(x):x<200?Math.round(x/5)*5:Math.round(x/10)*10;return r>=1000?(r/1000).toFixed(1).replace(/\.0$/,"")+" kg":r+" g"}

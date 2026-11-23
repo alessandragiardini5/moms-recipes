@@ -100,6 +100,8 @@ ol.steps li.done::before{background:#eee;color:#b3a899}
   .wrap{padding:0 18px}
 }
 
+.rhead .subtitle{font-family:var(--serif);font-style:italic;font-size:1.25rem;opacity:.75;margin:-6px 0 8px}
+.tile .subtitle{font-family:var(--serif);font-style:italic;font-size:.95rem;opacity:.75;margin:-2px 0 4px}
 .kicker{color:var(--red);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
 .tile[hidden]{display:none}
 /* favorites */

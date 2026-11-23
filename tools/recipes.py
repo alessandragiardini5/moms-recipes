@@ -1,6 +1,6 @@
 """Mom's recipes — the only file to edit when adding or correcting recipes.
 
-Recipe fields: id, title, cat, card (photo in cards/), back (optional photo of the card's back),
+Recipe fields: id, title, sub (English subtitle for Italian titles), cat, card (photo in cards/), back (optional photo of the card's back),
 from (default "Mom"; "Angela" for cards signed A. Dotson), fromline (replaces the whole
 "From the kitchen of …" line, e.g. "From Neiman Marcus"), cook (minutes, for HomeView),
 facts, groups, steps, tips (Mom's tips shown as "Mom's tips"), notes (open questions only).
@@ -10,7 +10,7 @@ Ingredient fields:
   q2   upper end of a range ("¾–1 cup" -> q 0.75, q2 1)
   pre  word before the amount, e.g. "about"
   u    unit, singular: cup, tbsp, tsp, oz, lb, can, cube, package, loaf, handful, bunch, strip,
-       square, bag, small bottle (none for "3 eggs")
+       square, bag, small bottle, glass, pinch, slice (none for "3 eggs")
   i    the ingredient
   n    note shown in every mode, e.g. "if desired"
   nus  note shown only in US units, e.g. "8 oz each"
@@ -597,11 +597,183 @@ RECIPES = [
  "tips":["Freezes well. Freezer to oven: cook 1 hr."],
  "notes":[]
 },
+{
+ "id":"pollo-alla-milanese","title":"Pollo alla Milanese","sub":"Breaded Chicken Cutlets","cat":"Mains",
+ "card":"pollo-alla-milanese.jpg","cook":15,
+ "facts":[["Cook","Pan-fried"],["Serves","1 breast per person"]],
+ "groups":[{"items":[
+   {"i":"chicken breasts","n":"1 per person"},
+   {"q":1,"i":"egg"},
+   {"i":"salt"},
+   {"i":"bread crumbs"},
+   {"i":"vegetable oil"}]}],
+ "steps":[
+   {"s":"Butterfly the chicken breasts (open them up) and pound them thin."},
+   {"s":"Put the egg and salt in a bowl and whip."},
+   {"s":"Dip the breasts in the egg."},
+   {"s":"Pour bread crumbs onto a plate and press both sides of each breast into them."},
+   {"s":"Pour vegetable oil into a pan and fry the breasts. Turn when golden."},
+   {"s":"When golden on both sides, lay them on paper towels."}],
+ "notes":[]
+},
+{
+ "id":"polpette","title":"Polpette","sub":"Meatballs","cat":"Mains",
+ "card":"polpette.jpg","cook":30,
+ "facts":[["Cook","about 30 min"],["Size","small fist"]],
+ "groups":[{"items":[
+   {"q":0.5,"u":"lb","i":"ground beef","n":"half of a 1 lb pack"},
+   {"q":1,"i":"egg"},
+   {"q":1,"u":"tbsp","i":"Parmesan cheese","n":"a spoonful"},
+   {"i":"parsley"},
+   {"q":2,"u":"slice","i":"bread","n":"soaked in milk or water, then squeezed"},
+   {"i":"salt"},
+   {"q":1,"u":"slice","i":"Black Forest ham, diced"},
+   {"i":"bread crumbs"},
+   {"i":"oil","n":"for frying"}]}],
+ "steps":[
+   {"s":"Soak the bread in milk or water, then squeeze it out."},
+   {"s":"Mix the ground beef, egg, Parmesan, parsley, bread and salt."},
+   {"s":"Add the diced ham, stir, then roll into meatballs the size of a small fist."},
+   {"s":"Pour bread crumbs onto a plate and roll the polpette in them."},
+   {"s":"Heat oil in a pan until hot enough to fry. Add the polpette and shake the pan."},
+   {"s":"Cook slowly, making sure they cook on all sides, for about 30 minutes.","t":30}],
+ "notes":[]
+},
+{
+ "id":"gnocchi","title":"Gnocchi","sub":"Potato Dumplings","cat":"Mains",
+ "card":"gnocchi.jpg","cook":5,
+ "facts":[["Serves","",2]],
+ "groups":[{"items":[
+   {"q":1.5,"i":"big potatoes"},
+   {"q":0.5,"u":"cup","i":"flour","n":"plus more while working the dough","gpc":125},
+   {"i":"salt"}]}],
+ "steps":[
+   {"s":"Boil the potatoes, then mash them with ½ cup flour."},
+   {"s":"Keep adding flour while working the dough. This must be done while it is still hot."},
+   {"s":"Add salt and work the dough until it holds together."},
+   {"s":"Cut the dough into big salami-like slices. Flour them and roll each one into a cylinder."},
+   {"s":"Cut into small pieces, then run each piece along the side of a grater."},
+   {"s":"Boil water and add salt. Drop in the gnocchi. They're ready when they float to the surface."}],
+ "notes":[]
+},
+{
+ "id":"peperoni-in-padella","title":"Peperoni in Padella","sub":"Pan-Cooked Peppers","cat":"Breads & Sides",
+ "card":"peperoni-in-padella.jpg","cook":0,
+ "facts":[["Cook","Slow, on the stove"]],
+ "groups":[{"items":[
+   {"q":3,"i":"bell peppers, sliced"},
+   {"i":"oil"},
+   {"i":"onion, diced"},
+   {"q":0.5,"u":"cube","i":"bouillon (dado)"},
+   {"i":"basil"}]}],
+ "steps":[
+   {"s":"Put the sliced peppers in a pan with the oil and diced onion. No water."},
+   {"s":"Lay the peppers skin side down. Add the dado."},
+   {"s":"Move the peppers from the sides of the pan to the center so they all cook."},
+   {"s":"Add basil and cook slowly."}],
+ "notes":[]
+},
+{
+ "id":"zucchine-trifolate","title":"Zucchine Trifolate","sub":"Sautéed Zucchini","cat":"Breads & Sides",
+ "card":"zucchine-trifolate.jpg","cook":20,
+ "facts":[["Cook","about 20 min"],["Serves","",2]],
+ "groups":[{"items":[
+   {"q":5,"q2":6,"i":"zucchini"},
+   {"q":1,"u":"slice","i":"onion"},
+   {"i":"oil"},
+   {"q":0.5,"u":"cube","i":"bouillon (dado)"}]}],
+ "steps":[
+   {"s":"Cut the zucchini in half lengthwise and remove part of the soft inside (only if it's soft). Cut into slices."},
+   {"s":"Fry the onion in oil, but don't let it turn golden."},
+   {"s":"Add the zucchini (don't add water) and stir. Add the dado."},
+   {"s":"As they cook they will shrink, so lower the heat. Cook for about 20 minutes.","t":20}],
+ "notes":[]
+},
+{
+ "id":"lenticchie-lessate","title":"Lenticchie Lessate","sub":"Stewed Lentils","cat":"Breads & Sides",
+ "card":"lenticchie-lessate.jpg","cook":20,
+ "facts":[["Soak","4–6 hours"],["Cook","about 20 min"],["Serves","",2]],
+ "groups":[{"items":[
+   {"q":0.5,"u":"bag","i":"lentils","nus":"1 lb bag","ge":454},
+   {"q":1,"u":"tbsp","i":"oil"},
+   {"q":1,"u":"slice","i":"onion, diced"},
+   {"i":"water","n":"enough to fill the pan halfway"},
+   {"q":0.5,"u":"cube","i":"bouillon (dado)"},
+   {"i":"salt"},
+   {"q":1,"u":"tbsp","i":"tomato paste"},
+   {"q":2,"i":"sage leaves"}]}],
+ "steps":[
+   {"s":"Soak the lentils in a small pot of lukewarm water for 4–6 hours."},
+   {"s":"Sift through them and remove any bad ones or pebbles."},
+   {"s":"Put the oil in a pan. Dice the onion slice and add it to the oil."},
+   {"s":"Before the onion turns golden, add water to fill the pan halfway."},
+   {"s":"Pour in the lentils. Add the dado, salt, tomato paste and sage leaves."},
+   {"s":"Cover with a lid and cook for about 20 minutes.","t":20}],
+ "notes":[]
+},
+{
+ "id":"green-beans-almondine","title":"Green Beans Almondine","cat":"Breads & Sides",
+ "card":"green-beans-almondine.jpg","cook":10,
+ "facts":[["Cook","Stovetop, low heat"]],
+ "groups":[{"items":[
+   {"q":2,"u":"tbsp","i":"sliced almonds"},
+   {"q":2,"u":"tbsp","i":"butter"},
+   {"q":1,"u":"tsp","i":"lemon juice"},
+   {"q":2,"u":"cup","i":"hot cooked green beans","gpc":125}]}],
+ "steps":[
+   {"s":"Melt the butter and add the almonds."},
+   {"s":"Keep on low heat until the almonds look golden in color. Stir."},
+   {"s":"Add the lemon juice."},
+   {"s":"Pour over the hot cooked green beans."}],
+ "notes":[]
+},
+{
+ "id":"parmesan-yams","title":"Parmesan Yams","cat":"Breads & Sides",
+ "card":"parmesan-yams.jpg","back":"parmesan-yams-back.jpg","cook":80,
+ "facts":[["Oven","425°F"],["Bake","45–60 + 15–20 min"],["Pan","9-inch cake pan"]],
+ "groups":[{"items":[
+   {"q":2,"u":"lb","i":"yams"},
+   {"q":1,"u":"stick","i":"butter","ge":113},
+   {"q":0.5,"u":"cup","i":"Parmesan cheese","gpc":100},
+   {"i":"salt and pepper"}]}],
+ "steps":[
+   {"s":"Peel the yams and slice them as thinly as possible."},
+   {"s":"Melt the butter and put 2 tbsp in the bottom of a 9-inch cake pan."},
+   {"s":"Put one layer of yams in the pan. Follow with 1 tbsp butter, a sprinkling of Parmesan, and salt and pepper to taste."},
+   {"s":"Continue layering the same way, ending with cheese. There should be about 4–6 layers."},
+   {"s":"Cover with a layer of wax paper or Saran wrap and press down. Remove the paper and replace it with foil."},
+   {"s":"Bake at 425°F for 45 minutes to 1 hour.","t":45},
+   {"s":"Remove the foil and continue baking for 15–20 minutes.","t":15}],
+ "tips":["Check at 40 min. This baking time may be a little long."],
+ "notes":[]
+},
+{
+ "id":"crepes","title":"Crêpes","cat":"Breakfast",
+ "card":"crepes.jpg","cook":0,
+ "facts":[["Rest","30 min"],["Cook","Nonstick pan"]],
+ "groups":[{"items":[
+   {"q":1,"u":"cup","i":"milk","n":"¼ liter on the card"},
+   {"q":1.4,"u":"cup","i":"flour","nus":"175 g","gpc":125},
+   {"q":2,"i":"eggs"},
+   {"q":2,"u":"tbsp","i":"sugar","n":"leave out for savory crêpes"},
+   {"q":0.5,"u":"glass","i":"beer or white wine"},
+   {"q":0.5,"u":"tbsp","i":"oil","n":"plus a drop for the pan"},
+   {"q":1,"u":"pinch","i":"salt"}]}],
+ "steps":[
+   {"s":"Mix the ingredients together well. There should be no lumps."},
+   {"s":"Let the batter rest for about 30 minutes.","t":30},
+   {"s":"Heat a nonstick pan on the stove and grease it with a drop of oil (spread it with a piece of paper towel)."},
+   {"s":"Pour in a small ladle of batter. Cook until the crêpe comes away from the pan, then flip it."}],
+ "tips":["For savory crêpes: same ingredients, but without the sugar."],
+ "notes":[]
+},
 ]
 
 # Recipes waiting on missing info.
 # Pizza: Ali is checking whether there's a second "Pizza Crust ②" card. Card photos are in cards/on-hold/
 # (pizza-crust-card1 + back, pizza-card2 + back). Agreed: one "Pizza" recipe; 1 tbsp olive oil total on the crusts.
+# Mystery cake (batch 7): only the back of the card (9x13 cake, 350°F, brown-sugar glaze topping with nuts) —
+# photo in cards/on-hold/mystery-cake-back.jpg. Waiting for the matching front card.
 ON_HOLD = [
 {
  "id":"pizza","title":"Pizza","cat":"Mains",
