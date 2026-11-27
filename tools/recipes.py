@@ -1254,13 +1254,13 @@ RECIPES = [
  "steps":[
    {"s":"Blend the eggs and pumpkin. Stir in the sugar, salt, cinnamon, ginger and cloves. Blend in the milk."},
    {"s":"Pour into the pie shell."},
-   {"s":"Bake at 400°F for about 40–50 minutes, until a knife inserted halfway between the edge and the center comes out clean.","t":50,"added":True},
+   {"s":"Bake at 400°F for about 40–50 minutes, until a knife inserted halfway between the edge and the center comes out clean.","t":50},
    {"s":"Cool completely."},
    {"s":"Topping: using a pastry blender, mix the soft butter, brown sugar and pecans."},
    {"s":"Crumble teaspoonfuls of the brown sugar mix over the pie with your fingers (this breaks up the clumps)."},
    {"s":"Broil 5 inches below the heat until bubbly, about 1 minute. Watch closely.","t":1}],
  "tips":["Yummy!"],
- "notes":["The card doesn't give a baking time. About 40–50 minutes at 400°F seems likely. Ask Mom to confirm."]
+ "notes":[]
 },
 {
  "id":"holiday-turkey","title":"Traditional Holiday Turkey","cat":"Mains",
